@@ -1,0 +1,12 @@
+[
+	{
+		"title": "Locker",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<PROP.TRG>><<Gate:Frame:int:47>>\n<<GET>><<KEYC01>>\nObtained work clothes and Keycard\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 540,
+			"y": 260
+		},
+		"colorID": 0
+	}
+]

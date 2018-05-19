@@ -5,7 +5,7 @@
 [ext_resource path="res://Scripts/ScriptedItem.gd" type="Script" id=3]
 [ext_resource path="res://Art/Tilesets/office.res" type="TileSet" id=4]
 
-[node name="Node2D" type="Node2D" index="0"]
+[node name="Node2D" type="Node2D"]
 
 [node name="TileManager" parent="." index="0" instance=ExtResource( 1 )]
 

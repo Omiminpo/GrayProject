@@ -12,7 +12,7 @@
 	{
 		"title": "Office_Door_01",
 		"tags": "",
-		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<DEFAULT:20:20:D>>\n<<END>>",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_LOCKERS:44:20:L>>\n<<END>>",
 		"position": {
 			"x": 1513,
 			"y": 85
@@ -32,7 +32,7 @@
 	{
 		"title": "Gate_Go",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "<<WAIT>><<0>>\n*bzz*\n<<BREAK>>\n<<PROP.TRG>><<Gate:IS_WALL:bool:false>>\n<<PROP.TRG>><<Gate:Frame:int:171>>\n<<END>>",
 		"position": {
 			"x": 1515,
 			"y": -149
@@ -42,7 +42,7 @@
 	{
 		"title": "Gate_NotGo",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "I need to get my keycard to get through.\n<<BREAK>>\n<<END>>",
 		"position": {
 			"x": 1777,
 			"y": -147

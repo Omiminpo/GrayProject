@@ -99,6 +99,8 @@ func _process(delta):
 	if (Global.Pg_Stopped):
 		return
 	
+	Global.Skip = false
+	
 	if (move_held):
 		move_trashold -= delta
 	else:
@@ -119,6 +121,7 @@ func _input(event):
 			
 		state = IDLE
 		move_held = false
+		
 		return
 	else:
 		if ( MovTween.playback_speed <= 0):
@@ -127,6 +130,7 @@ func _input(event):
 	if (Global.Pg_Stopped or Global.Ui_Mode):
 		state = IDLE
 		move_held = false
+		
 		return
 	
 	if (Global.Dialogue_Going):
@@ -135,6 +139,7 @@ func _input(event):
 		
 	if (Global.Skip):
 		Global.Skip = false
+		
 		return
 	
 	#check old presses on release

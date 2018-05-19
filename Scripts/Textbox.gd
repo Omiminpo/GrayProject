@@ -84,6 +84,7 @@ func _input(event):
 		return
 		
 	if (event.is_action_pressed("Look")):
+		Global.Skip = true
 		if (_full_line == _textbox.text):
 			match (_mode):
 				BREAK:
@@ -242,6 +243,7 @@ func Parse_line():
 	var instruction = _body[_line]
 	var char_pos = 0
 	var i = 0
+	print (instruction, " ", _line)
 	match (instruction.left(2) ):
 		"<<":
 			char_pos = 2
