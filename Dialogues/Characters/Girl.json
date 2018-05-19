@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Girl_INIT",
+		"tags": "",
+		"body": "<<END>>\n",
+		"position": {
+			"x": -85,
+			"y": -100
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Girl",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<BOX.INVISIBLE>>\n<<MENUS>><<false:false:false>>\n<<OVERRIDE>><<nexttype>>\n<<SPEED.TRG>><<TestThing:run>>\n<<PROP.TRG>><<TestThing:Loop:bool:true>>\n<<PROP.TRG>><<TestThing:IS_WALL:toggle:pp>>\n<<WALK.TRG>><<TestThing:REL:D:D:Active>>\n<<WALK.TRG>><<TestThing:REL:R:R:Active>>\n<<WAIT>><<3>>\n<<SPEED.PG>><<walk>>\n<<SHAKE>><<0:0:true>>\n<<BOX.VISIBLE>>\n<<OVERRIDE>><<clear>>\nHello\n<<BREAK>>\n<<MENUS>><<true:true:true>>\n<<END>>\n",
+		"position": {
+			"x": 138,
+			"y": -100
+		},
+		"colorID": 0
+	}
+]

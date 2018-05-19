@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Art/Whiteout.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Fade.gd" type="Script" id=2]
+
+[node name="Sprite" type="Sprite" index="0"]
+
+light_mask = 0
+position = Vector2( -44, -209.002 )
+scale = Vector2( 4306.5, 2814.62 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+

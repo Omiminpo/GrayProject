@@ -1,0 +1,42 @@
+[
+	{
+		"title": "Egg",
+		"tags": "",
+		"body": "Welcome to the DEV ZONE!!!!\n<<BREAK>>\nThis is just a temp message\n<<BREAK>>\nGoodbye\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 536,
+			"y": -106
+		},
+		"colorID": 0
+	},
+	{
+		"title": "D_0_01",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<1:20:20>>\n<<END>>",
+		"position": {
+			"x": 523,
+			"y": -370
+		},
+		"colorID": 0
+	},
+	{
+		"title": "ScriptCarrier_INIT",
+		"tags": "",
+		"body": "<<WAIT>><<0.00001>>\n<<SCROLL.CAMERA>><<true:true>>\n<<SPAWN>><<ObjectAttempt.tscn:Girl>>\n<<WAIT>><<0.00001>>\n<<WARP.TRG>><<Girl:28:23>>\nTerrifying\n<<PICTURE.SHOW>><<Items/Item_2.png>>\nI will kill you kakaroth\n<<BREAK>>\n<<PICTURE.HIDE>>\nSaid Vegeta\n<<BREAK>>\n<<CHOICE>><<question-text 1:14-Answer 2:14-This is the third 3:14-text 4:14>>\n<<END>>",
+		"position": {
+			"x": 153,
+			"y": -266
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Egg_INIT",
+		"tags": "",
+		"body": "<<END>>",
+		"position": {
+			"x": 770,
+			"y": -109
+		},
+		"colorID": 0
+	}
+]

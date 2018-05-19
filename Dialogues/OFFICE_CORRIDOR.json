@@ -1,0 +1,102 @@
+[
+	{
+		"title": "Sign",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\nITER MANAGEMENT Co. A great company, made of great people!\n<<BREAK>>\n<<PICTURE.BOX.SHOW>><<Pictures\\Logo.png>>\n<<BREAK>>\n<<PICTURE.BOX.HIDE>><<>>\n<<END>>",
+		"position": {
+			"x": -136,
+			"y": 73
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_03",
+		"tags": "",
+		"body": "<<IF>><<Can_Go_Work b== true end>> 2:3\n[[Office_Door_03_Go]]\n[[Office_Door_03_NotGo]]",
+		"position": {
+			"x": 797,
+			"y": 300
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_02",
+		"tags": "",
+		"body": "<<IF>><<Can_Go_Home b== true end>> 2:3\n[[Office_Door_02_Go]]\n[[Office_Door_02_NotGo]]",
+		"position": {
+			"x": 802,
+			"y": 89
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_02_Go",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<DEFAULT:20:20:D>>\n<<END>>",
+		"position": {
+			"x": 1068,
+			"y": 86
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_02_NotGo",
+		"tags": "",
+		"body": "<<WALK.PG>><<REL:U:U:walk>>\nI can't go home right now.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 1342,
+			"y": 91
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_03_Go",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_CENTER:26:25:U>>\n<<END>>",
+		"position": {
+			"x": 1071,
+			"y": 306
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_03_NotGo",
+		"tags": "",
+		"body": "It's Locked.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 1345,
+			"y": 315
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_03_INIT",
+		"tags": "",
+		"body": "<<IF>><<Can_Go_Work b== true end>> 2:3\n[[Office_Door_03_INIT_Go]]\n[[Office_Door_03_INIT_NotGo]]",
+		"position": {
+			"x": 799,
+			"y": 527
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_03_INIT_Go",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<PROP.TRG>><<DoorUp:IS_WALL:bool:false>>\n<<PROP.TRG>><<DoorUp:TYPE:string:ENT>>\n<<END>>",
+		"position": {
+			"x": 1070,
+			"y": 528
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_03_INIT_NotGo",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<PROP.TRG>><<DoorUp:IS_WALL:bool:true>>\n<<PROP.TRG>><<DoorUp:TYPE:string:TXT>>\n<<END>>",
+		"position": {
+			"x": 1345,
+			"y": 536
+		},
+		"colorID": 0
+	}
+]

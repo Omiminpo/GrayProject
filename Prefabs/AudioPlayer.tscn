@@ -1,0 +1,83 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/AudioPlayer.gd" type="Script" id=1]
+
+[sub_resource type="AudioStreamSample" id=1]
+
+format = 0
+loop_mode = 0
+loop_begin = 0
+loop_end = 0
+mix_rate = 44100
+stereo = false
+data = PoolByteArray(  )
+
+[node name="AudioPlayer" type="Node" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="." index="0"]
+
+stream = null
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="." index="1"]
+
+stream = null
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="." index="2"]
+
+stream = null
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="3"]
+
+stream = null
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." index="4"]
+
+stream = null
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="." index="5"]
+
+stream = SubResource( 1 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="." index="6"]
+
+stream = null
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="." index="7"]
+
+stream = null
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+

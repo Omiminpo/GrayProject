@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Inv_C .png-9346028a3a0dddaec89a1da346fcb503.stex"
+
+[deps]
+
+source_file="res://Art/UI/Inv_C .png"
+source_md5="583320707eeb080f1314ff1cc0562ec7"
+
+dest_files=[ "res://.import/Inv_C .png-9346028a3a0dddaec89a1da346fcb503.stex" ]
+dest_md5="79b5e46a72c495949e9da3db62e2d2b5"
+
+[params]
+
+compress/mode=3
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=2
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

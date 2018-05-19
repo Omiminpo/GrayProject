@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Art/Egg.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ScriptedItem.gd" type="Script" id=2]
+
+[node name="Egg" type="Sprite"]
+
+position = Vector2( 5.25861, 8.80504 )
+texture = ExtResource( 1 )
+centered = false
+script = ExtResource( 2 )
+_sections_unfolded = [ "Offset" ]
+STAND_ALONE_LOADER = false
+Interactable = true
+Movable = false
+Loop = false
+IS_WALL = true
+TYPE = "TXT"
+ID = "Egg"
+LOAD_AT_START = true
+STOP_PLAYER = false
+DISABLE_COMMANDS = true
+STOP_PLAYER_INIT = false
+DISABLE_COMMANDS_INIT = false
+TYPE_OF_FOOTPRINT = 0
+SPEED = 1
+RUN_SPEED = 2
+
+

@@ -1,0 +1,102 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/TileManager.gd" type="Script" id=1]
+[ext_resource path="res://Art/FloorTiles.res" type="TileSet" id=2]
+[ext_resource path="res://Scripts/Floor.gd" type="Script" id=3]
+[ext_resource path="res://Art/AttemptTileset.res" type="TileSet" id=4]
+[ext_resource path="res://Prefabs/PC.tscn" type="PackedScene" id=5]
+
+[node name="TileManager" type="YSort"]
+
+sort_enabled = false
+script = ExtResource( 1 )
+_sections_unfolded = [ "Sort", "Transform" ]
+
+[node name="Floor" type="TileMap" parent="." index="0"]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray(  )
+script = ExtResource( 3 )
+_sections_unfolded = [ "Cell", "Transform" ]
+
+[node name="Accessories_Floor" type="TileMap" parent="." index="1"]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray(  )
+_sections_unfolded = [ "Cell", "Transform" ]
+
+[node name="Walls" type="TileMap" parent="." index="2"]
+
+mode = 0
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 16, 16 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = true
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 983064, 0, 0, 983065, 0, 0, 983066, 0, 0, 983067, 0, 0, 983068, 0, 0, 983069, 0, 0, 983070, 0, 0, 983071, 0, 0, 983072, 0, 0, 983073, 0, 0, 1048600, 0, 0, 1048609, 0, 0, 1114136, 0, 0, 1114145, 0, 0, 1179672, 0, 0, 1179681, 0, 0, 1245208, 0, 0, 1245217, 0, 0, 1310744, 0, 0, 1310753, 0, 0, 1376280, 0, 0, 1376289, 0, 0, 1441816, 0, 0, 1441825, 0, 0, 1507352, 0, 0, 1507361, 0, 0, 1572888, 0, 0, 1572889, 0, 0, 1572890, 0, 0, 1572891, 0, 0, 1572892, 0, 0, 1572893, 0, 0, 1572894, 0, 0, 1572895, 0, 0, 1572896, 0, 0, 1572897, 0, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="PC" parent="Walls" index="0" instance=ExtResource( 5 )]
+
+[node name="Accessories_Ceiling" type="TileMap" parent="." index="3"]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray(  )
+_sections_unfolded = [ "Cell", "Transform" ]
+
+

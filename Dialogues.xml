@@ -1,0 +1,52 @@
+<nodes>
+	<node>
+		<title>Tutorial Corridor</title>
+		<tags>Room</tags>
+		<body>[[Object|Object]]</body>
+		<position x="270" y="236"></position>
+		<colorID>0</colorID>
+	</node>
+	<node>
+		<title>Default</title>
+		<tags>room</tags>
+		<body>[[Girl|Girl]], [[Egg|Egg]]</body>
+		<position x="945" y="83"></position>
+		<colorID>0</colorID>
+	</node>
+	<node>
+		<title>Object</title>
+		<tags>Object Root Dialogue</tags>
+		<body>Default Object</body>
+		<position x="247" y="531"></position>
+		<colorID>0</colorID>
+	</node>
+	<node>
+		<title>Girl</title>
+		<tags>Root Dialogue Object</tags>
+		<body><<IF>><<seen == true>> [[GirlSeen]]
+[[GirlNotSeen]]</body>
+		<position x="790" y="373"></position>
+		<colorID>0</colorID>
+	</node>
+	<node>
+		<title>Egg</title>
+		<tags>Root Dialogue Object</tags>
+		<body>This is the egg of life</body>
+		<position x="1207" y="412"></position>
+		<colorID>0</colorID>
+	</node>
+	<node>
+		<title>GirlSeen</title>
+		<tags>Dialogue</tags>
+		<body>I have Seen This</body>
+		<position x="629" y="666"></position>
+		<colorID>0</colorID>
+	</node>
+	<node>
+		<title>GirlNotSeen</title>
+		<tags>Dialogue</tags>
+		<body>This is a girl <<SET>><<seen = true>></body>
+		<position x="937" y="663"></position>
+		<colorID>0</colorID>
+	</node>
+</nodes>

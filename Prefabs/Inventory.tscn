@@ -1,0 +1,262 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Art/UI/Inventory Panel.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/EmptyAdapt.gd" type="Script" id=2]
+[ext_resource path="res://Art/UI/HeartbitXX.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scripts/Inventory.gd" type="Script" id=4]
+[ext_resource path="res://Art/UI/Empty.png" type="Texture" id=5]
+[ext_resource path="res://Art/UI/Back.png" type="Texture" id=6]
+[ext_resource path="res://Art/UI/Back_C.png" type="Texture" id=7]
+[ext_resource path="res://Art/UI/Back_H.png" type="Texture" id=8]
+[ext_resource path="res://Scripts/BackMenus.gd" type="Script" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 16
+use_mipmaps = false
+use_filter = false
+extra_spacing_bottom = -3
+extra_spacing_space = -3
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Resource", "Settings" ]
+
+[node name="Inventory Panel" type="TextureRect"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 62.0
+margin_right = 222.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 1 )
+stretch_mode = 0
+script = ExtResource( 2 )
+_sections_unfolded = [ "Material", "Mouse", "Rect", "Visibility" ]
+
+[node name="Title" type="Label" parent="." index="0"]
+
+anchor_left = 0.02383
+anchor_top = 0.09301
+anchor_right = 0.96962
+anchor_bottom = 0.90675
+margin_left = 0.1872
+margin_top = 5.1184
+margin_right = 0.860809
+margin_bottom = -105.08
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "INVENTORY"
+align = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = 18
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="ArrowLeft" type="Label" parent="." index="1"]
+
+anchor_left = 0.02383
+anchor_top = 0.09301
+anchor_right = 0.96962
+anchor_bottom = 0.90675
+margin_left = 0.1872
+margin_top = 17.1184
+margin_right = -143.139
+margin_bottom = -47.08
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "◀"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = 18
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="ArrowRight" type="Label" parent="." index="2"]
+
+anchor_left = 0.02383
+anchor_top = 0.09301
+anchor_right = 0.96962
+anchor_bottom = 0.90675
+margin_left = 144.187
+margin_top = 17.1184
+margin_right = 3.86081
+margin_bottom = -47.08
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "▶"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = 18
+
+[node name="InventoryCol1" type="Label" parent="." index="3"]
+
+anchor_left = 0.02383
+anchor_top = 0.09301
+anchor_right = 0.96962
+anchor_bottom = 0.90675
+margin_left = 9.1872
+margin_top = 17.1184
+margin_right = -78.1392
+margin_bottom = -48.08
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = 5
+script = ExtResource( 4 )
+_sections_unfolded = [ "Rect", "custom_fonts" ]
+
+[node name="InventoryCol2" type="Label" parent="." index="4"]
+
+anchor_left = 0.02383
+anchor_top = 0.09301
+anchor_right = 0.96962
+anchor_bottom = 0.90675
+margin_left = 78.1872
+margin_top = 17.1184
+margin_right = -8.13919
+margin_bottom = -48.08
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = 5
+_sections_unfolded = [ "Hint", "Rect", "custom_fonts" ]
+
+[node name="Empty" type="TextureRect" parent="." index="5"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 160.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 5 )
+stretch_mode = 0
+_sections_unfolded = [ "Hint", "Mouse", "Rect", "Size Flags" ]
+
+[node name="Black" type="TextureRect" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 13.0
+margin_top = 114.0
+margin_right = 45.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+expand = true
+stretch_mode = 0
+_sections_unfolded = [ "Hint", "Rect", "Size Flags" ]
+
+[node name="Description" type="Label" parent="." index="7"]
+
+anchor_left = 0.02383
+anchor_top = 0.09301
+anchor_right = 0.96962
+anchor_bottom = 0.90675
+margin_left = 51.1872
+margin_top = 88.1184
+margin_right = -2.13919
+margin_bottom = 7.92
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "
+"
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = 12
+_sections_unfolded = [ "Material" ]
+
+[node name="TextureButton" type="TextureButton" parent="." index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 138.0
+margin_top = 137.0
+margin_right = 155.0
+margin_bottom = 155.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+script = ExtResource( 9 )
+
+

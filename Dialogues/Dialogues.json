@@ -1,0 +1,72 @@
+[
+	{
+		"title": "Tutorial Corridor",
+		"tags": "Room",
+		"body": "[[Object|Object]]",
+		"position": {
+			"x": 270,
+			"y": 236
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Default",
+		"tags": "room",
+		"body": "[[Girl|Girl]], [[Egg|Egg]]",
+		"position": {
+			"x": 945,
+			"y": 83
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Object",
+		"tags": "Object Root Dialogue",
+		"body": "Default Object",
+		"position": {
+			"x": 247,
+			"y": 531
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Girl",
+		"tags": "Root Dialogue Object",
+		"body": "<<IF>><<seen == true>> [[GirlSeen]]\n[[GirlNotSeen]]",
+		"position": {
+			"x": 790,
+			"y": 373
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Egg",
+		"tags": "Root Dialogue Object",
+		"body": "This is the egg of life",
+		"position": {
+			"x": 1207,
+			"y": 412
+		},
+		"colorID": 0
+	},
+	{
+		"title": "GirlSeen",
+		"tags": "Dialogue",
+		"body": "I have Seen This",
+		"position": {
+			"x": 629,
+			"y": 666
+		},
+		"colorID": 0
+	},
+	{
+		"title": "GirlNotSeen",
+		"tags": "Dialogue",
+		"body": "This is a girl <<SET>><<seen = true>>",
+		"position": {
+			"x": 937,
+			"y": 663
+		},
+		"colorID": 0
+	}
+]

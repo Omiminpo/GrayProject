@@ -1,0 +1,140 @@
+OBJECT TAGS
+	TXT: Press to Execute
+	STP: Step to Execute
+	ENT: Entry to Execute (execute as soon as movement is made towards it)
+	AUT: Auto Execute
+
+INSTRUCTIONS
+	<<IF>><<var1 cond value>>
+		cond:
+			b==		: bool, equal
+			i==		: int, equal
+			>		: int, bigger
+			<		: int, smaller
+			<=		: int, smaller or equal
+			>=		: int, bigger or equal
+	
+	<<IF>><<var1 cond var2>> gototrue:gotofalse
+		cond:
+			vb==	: bool, equal
+			vi==	: int, equal
+			v>		: int, bigger
+			v<		: int, smaller
+			v<=		: int, smaller or equal
+			v>=		: int, bigger or equal
+	
+	<<IF>><<inventory cond id>> gototrue:gotofalse
+		cond:
+			contains: check if id is in inventory
+			lacks: check if id is not in inventory
+			
+	<<IF>><<player position x:y>>
+		position	: position equal to position xy
+		x>			: pos.x higher than xy	 
+		x<			: pos.x lower than xy		
+		y>			: pos.y higher than xy
+		y<			: pos.y lower than xy
+	
+	<<SET>><<var1 sign value>>
+		sign:
+			b=		: assign bool value to var1
+			i=		: assign int value to var1
+			+=		: add int value to var1
+			-=		: subtract int value to var1
+			*=		: multiply int value from var1
+			
+	<<SET>><<var1 sign var2>>
+		sign:
+			vb=		: assign bool variable to var1
+			vi=		: assign int variable to var1
+			v+=		: add int variable to var1
+			v-=		: subtract int variable to var1
+			v*=		: multiply int variable from var1
+			
+	<<GET>><<id>>
+		add item id to inventory
+		
+	<<CHOICE>><<question-text 1:goto 1:condition 1-text 2:goto 2:condition 2-text 3:goto 3:condition 3-text 4:goto 4:condition 4>>
+		Choice dialogue
+	
+	<<BOX.INVISIBLE>>
+	<<BOX.VISIBLE>>
+	<<BOX.TOGGLE>>
+		Sets visibility of textbox
+		
+	<<SOUND>><<instruction:sample:loop>>
+		instruction:
+			PlayFX		: Plays a sample
+			PlayMusic	: Plays a piece of soundtrack
+			Stop		: Stops a specific sample
+			StopMusic	: Stops any music playing
+			StopAll		: Stops all sound playing
+			StopFX		: Stops all FX playing 		
+			
+	<<WAIT>><<time>>
+		waits for time time
+
+	<<AUTO>><<speed>>
+		The text advances automatically at speed speed. if speed is negative it deactivates this mode
+
+	<<TIMING>><<string:multiplier>>
+		set up the timing of singular characters in the next line
+		
+		string can be set as:
+			clear	: To disable nuanced timing
+			
+		characters:
+			numbers 1-9					: seconds of wait 
+			!, `, £, $, %, ^, &,*, (, )	: seconds of wait (multiplied by multiplier) - to note that 2 is actually ` and not "
+			Q, W, E, R, T, Y, U, I, O, P: seconds of wait (multiplide by multiplier x 10)
+			d							: default
+			any other character			: no change
+	
+	<<OVERRIDE>><<what>>
+		what:
+			next		: overrides the next button, disabling it
+			type		: overrides the typing speed, making the space button not complete phrases
+			nexttype	: overrides both
+			clear		: overrides neither
+	
+	<<TRANSITION>><<FadeType to Fadetype:r g b:speed to speed>>
+		FadeType:
+			Fade: Fade transition
+			Cut: Cut transition
+		r g b: rgb value of transition
+		
+	<<MOVE>><<Area:X:Y>>
+		Area: the name of the aria the move leads top
+		X: X position of spawn
+		Y: Y position of spawn
+		
+	<<WALK.PG>><<x:y:direction:anim>>
+		Move character to x:y position
+		direction: U, D, L, R
+		(N can be used to idle on place)
+		
+	<<WALK.PG>><<REL:movdir:direction:anim>>
+	
+	<<SPEED.PG>><<val>>
+		val can be float, or "walk" or "run"
+		sets the speed
+		
+	<<WALK.TRG>><<target:x:y:direction:anim>>
+	<<SPEED.TRG>><<val>>
+	
+	<<PROP.TRG>><<target:property:type:value>>
+		type can be "toggle" on bools
+	
+	<<ANIM.TRG>><<target:animation:force>>
+		play animation
+	
+	<<BREAK>>
+		creates a break point, player needs to press enter to continue
+		
+	<<END>>
+		closes dialogue box
+		
+OTHERS
+	[[Node]]
+		Move to node named Node
+		

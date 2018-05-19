@@ -1,0 +1,22 @@
+{
+  "KEYC01": {
+    "Name": "Keycard",
+    "Description": "Grants nightly access to the Iter Management Co. offices. It has someone else's photo on it, but it's been erased with a black marker.",
+    "Picture": "Keycard"
+  },
+  "DEF_01": {
+    "Name": "OBJECT 1",
+    "Description": "This is the default object you find in the default editor, know what I mean?",
+    "Picture": "Item_1"
+  },
+  "DEF_02": {
+    "Name": "Def_Two",
+    "Description": "HEllo. It's Me. Mario.",
+    "Picture": "Item_2"
+  },
+  "DEF_03": {
+    "Name": "Ready Ob 3",
+    "Description": "Hahahahahahaha",
+    "Picture": "Item_3"
+  }
+}

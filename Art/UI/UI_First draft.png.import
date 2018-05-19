@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/UI_First draft.png-7165a26f289e35ea9d4388036fa186a6.stex"
+
+[deps]
+
+source_file="res://Art/UI/UI_First draft.png"
+source_md5="2e9a682e035f52adba12c70923f2a1d1"
+
+dest_files=[ "res://.import/UI_First draft.png-7165a26f289e35ea9d4388036fa186a6.stex" ]
+dest_md5="9c4255e93e79938b040073ebf163d4e0"
+
+[params]
+
+compress/mode=3
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=2
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

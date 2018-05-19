@@ -1,0 +1,29 @@
+title: Girl
+tags: Root Dialogue Object
+colorID: 0
+position: 563,255
+---
+<<IF>><<seen == true>> [[GirlSeen]]
+[[GirlNotSeen]]
+===
+title: Egg
+tags: Root Dialogue Object
+colorID: 0
+position: 1151,225
+---
+This is the egg of life
+===
+title: GirlSeen
+tags: Dialogue
+colorID: 0
+position: 388,643
+---
+I have Seen This
+===
+title: GirlNotSeen
+tags: Dialogue
+colorID: 0
+position: 746,629
+---
+This is a girl <<SET>><<seen = true>>
+===

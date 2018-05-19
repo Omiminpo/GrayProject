@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/119_Blip_2.wav-0a32031b41e05c4bf06939589df8a32a.sample"
+
+[deps]
+
+source_file="res://Audio/Effects/119_Blip_2.wav"
+source_md5="4ad74fa7bb4385ec176b4e2bb961a792"
+
+dest_files=[ "res://.import/119_Blip_2.wav-0a32031b41e05c4bf06939589df8a32a.sample" ]
+dest_md5="c24a58009540ca147b50c4d7e402ffa2"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
