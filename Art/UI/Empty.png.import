@@ -7,10 +7,7 @@ path="res://.import/Empty.png-8a9637a9144617ec96fac29054b17506.stex"
 [deps]
 
 source_file="res://Art/UI/Empty.png"
-source_md5="87e01665099b0bc625e5c62648b2d286"
-
 dest_files=[ "res://.import/Empty.png-8a9637a9144617ec96fac29054b17506.stex" ]
-dest_md5="aaf1347bb75f8a1ed6f4dbffdf961068"
 
 [params]
 

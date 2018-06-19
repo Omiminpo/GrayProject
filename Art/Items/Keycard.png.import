@@ -7,10 +7,7 @@ path="res://.import/Keycard.png-0df8e7157f900bdd44112349288378f5.stex"
 [deps]
 
 source_file="res://Art/Items/Keycard.png"
-source_md5="3f58190eac066f2741ca659b5b56cdf5"
-
 dest_files=[ "res://.import/Keycard.png-0df8e7157f900bdd44112349288378f5.stex" ]
-dest_md5="b94230f9164ef29e036d2216451d9110"
 
 [params]
 

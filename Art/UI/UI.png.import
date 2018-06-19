@@ -7,10 +7,7 @@ path="res://.import/UI.png-2b6c356587cc3dfd9c553226efe339c0.stex"
 [deps]
 
 source_file="res://Art/UI/UI.png"
-source_md5="a764fff9174313bec0115c622d5cec85"
-
 dest_files=[ "res://.import/UI.png-2b6c356587cc3dfd9c553226efe339c0.stex" ]
-dest_md5="3beab3f4fbd70bfd1b901b46819d063b"
 
 [params]
 

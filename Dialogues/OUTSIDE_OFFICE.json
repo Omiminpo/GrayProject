@@ -1,0 +1,122 @@
+[
+	{
+		"title": "TextLine1",
+		"tags": "",
+		"body": "<<WAIT>><<0.5>>\n<<AUTO>><<0.5>>\n<<TEXBOX>><<UP>>\n<<OVERRIDE>><<both>>\n<<DESTROY>><<TextLine1_1>>\n<<DESTROY>><<TextLine1_2>>\n<<DESTROY>><<TextLine1_3>>\n<<DESTROY>><<TextLine1_4>>\n<<DESTROY>><<TextLine1_5>>\nA DEATHLESS WAKE\n<<BREAK>>\n<<WAIT>><<13.5>>\n<<END>>",
+		"position": {
+			"x": 48,
+			"y": 88
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TextLine2",
+		"tags": "",
+		"body": "<<WAIT>><<0.5>>\n<<AUTO>><<0.5>>\n<<TEXBOX>><<UP>>\n<<OVERRIDE>><<both>>\n<<DESTROY>><<TextLine2_1>>\n<<DESTROY>><<TextLine2_2>>\n<<DESTROY>><<TextLine2_3>>\n<<DESTROY>><<TextLine2_4>>\n<<DESTROY>><<TextLine2_5>>\nA game by Someone\n<<BREAK>>\n<<WAIT>><<5.5>>\n<<END>>",
+		"position": {
+			"x": 270,
+			"y": 87
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TextLine3",
+		"tags": "",
+		"body": "<<WAIT>><<0.5>>\n<<AUTO>><<0.5>>\n<<TEXBOX>><<UP>>\n<<OVERRIDE>><<both>>\n<<DESTROY>><<TextLine3_1>>\n<<DESTROY>><<TextLine3_2>>\n<<DESTROY>><<TextLine3_3>>\n<<DESTROY>><<TextLine3_4>>\n<<DESTROY>><<TextLine3_5>>\nHeartbit font by Void\n<<BREAK>>\n<<WAIT>><<5.5>>\n<<END>>",
+		"position": {
+			"x": 489,
+			"y": 87
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TextLine4",
+		"tags": "",
+		"body": "<<WAIT>><<0.5>>\n<<AUTO>><<0.5>>\n<<TEXBOX>><<UP>>\n<<OVERRIDE>><<both>>\n<<DESTROY>><<TextLine4_1>>\n<<DESTROY>><<TextLine4_2>>\n<<DESTROY>><<TextLine4_3>>\n<<DESTROY>><<TextLine4_4>>\n<<DESTROY>><<TextLine4_5>>\n\"So I watch what's left of my life like a security guard on the night shift...\"\n<<BREAK>>\n<<WAIT>><<8>>\n<<END>>",
+		"position": {
+			"x": 711,
+			"y": 72
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TextLine5",
+		"tags": "",
+		"body": "<<WAIT>><<0.5>>\n<<AUTO>><<0.5>>\n<<TEXBOX>><<UP>>\n<<OVERRIDE>><<both>>\n<<DESTROY>><<TextLine5_1>>\n<<DESTROY>><<TextLine5_2>>\n<<DESTROY>><<TextLine5_3>>\n<<DESTROY>><<TextLine5_4>>\n<<DESTROY>><<TextLine5_5>>\n\"Checking the locks when I know I don't need to, pacing the perimeter of someplace nobody's going to break into...\"\n<<BREAK>>\n<<WAIT>><<8>>\n<<END>>",
+		"position": {
+			"x": 924,
+			"y": 75
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TextLine6",
+		"tags": "",
+		"body": "<<WAIT>><<0.5>>\n<<AUTO>><<0.5>>\n<<TEXBOX>><<UP>>\n<<OVERRIDE>><<both>>\n<<DESTROY>><<TextLine6_1>>\n<<DESTROY>><<TextLine6_2>>\n<<DESTROY>><<TextLine6_3>>\n<<DESTROY>><<TextLine6_4>>\n<<DESTROY>><<TextLine6_5>>\n\"Except that you never know. Something could happen. So you keep watch...\"\n<<BREAK>>\n<<WAIT>><<8>>\n<<END>>",
+		"position": {
+			"x": 1139,
+			"y": 77
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TextLine7",
+		"tags": "",
+		"body": "<<WAIT>><<0.5>>\n<<AUTO>><<0.5>>\n<<TEXBOX>><<UP>>\n<<OVERRIDE>><<both>>\n<<DESTROY>><<TextLine7_1>>\n<<DESTROY>><<TextLine7_2>>\n<<DESTROY>><<TextLine7_3>>\n<<DESTROY>><<TextLine7_4>>\n<<DESTROY>><<TextLine7_5>>\n\"They don’t pay security guards just because they're a few bodies short on the payroll.\"\n<<BREAK>>\n<<WAIT>><<8>>\n<<END>>",
+		"position": {
+			"x": 1355,
+			"y": 78
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TextLine8",
+		"tags": "",
+		"body": "<<WAIT>><<0.5>>\n<<AUTO>><<0.5>>\n<<TEXBOX>><<UP>>\n<<OVERRIDE>><<both>>\n<<DESTROY>><<TextLine8_1>>\n<<DESTROY>><<TextLine8_2>>\n<<DESTROY>><<TextLine8_3>>\n<<DESTROY>><<TextLine8_4>>\n<<DESTROY>><<TextLine8_5>>\n-- Universal Harvester,                                 John Darnielle\n<<BREAK>>\n<<WAIT>><<8>>\n<<END>>",
+		"position": {
+			"x": 1567,
+			"y": 80
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Entrance",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<IF>><<Longwalk b== true end>> 4:3\n<<END>>\n<<BOX.INVISIBLE>>\n<<SET>><<Longwalk b= false>>\n<<WAIT>><<120>>\n<<WALK.TRG>><<Bus:110:30:L:Base>>\n<<WAIT>><<22>>\n<<PROP.TRG>><<BusEntrance:IS_WALL:bool:false>>\n<<PROP.TRG>><<BusEntrance:Interactable:bool:true>>\n<<PROP.TRG>><<ArrowFloor:frame:int:26>>\n<<END>>",
+		"position": {
+			"x": 233,
+			"y": 315
+		},
+		"colorID": 0
+	},
+	{
+		"title": "InvisibleWall",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<OVERRIDE>><<clear>>\n<<IF>><<Longwalk b== false end>> 4:7\n<<WALK.PG>><<REL:R:R:walk>>\nThe bus will be here soon...\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 482,
+			"y": 315
+		},
+		"colorID": 0
+	},
+	{
+		"title": "BusEntrance",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<BOX.INVISIBLE>>\n<<WAIT>><<2>>\n<<PROP.TRG>><<ArrowFloor:frame:int:59>>\n<<WAIT>><<2>>\n<<WALK.TRG>><<Bus:50:30:L:Base>>\n<<WAIT>><<12>>\n<<MOVE>><<BUS_TRANSITION_1:1:1:D>>\n<<END>>",
+		"position": {
+			"x": 737,
+			"y": 309
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Sign",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<BOX.VISIBLE>>\nThis sign shows the bus' timetable\n<<BREAK>>\nIt will be here. Eventually.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 966,
+			"y": 313
+		},
+		"colorID": 0
+	}
+]

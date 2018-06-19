@@ -7,10 +7,7 @@ path="res://.import/Tas_H.png-a316fd27159cf3a0f265099706597931.stex"
 [deps]
 
 source_file="res://Art/UI/Tas_H.png"
-source_md5="3b432cf97ba11fb4f974450c4c1585e0"
-
 dest_files=[ "res://.import/Tas_H.png-a316fd27159cf3a0f265099706597931.stex" ]
-dest_md5="f023549a920fdb950b77b72cf080176b"
 
 [params]
 

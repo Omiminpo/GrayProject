@@ -7,10 +7,11 @@ extends Node
 # [3] : CURRENT CHECKS
 # [4] : OPTIONAL
 
-var Tasks = [[]]
+var Tasks = []
 
 func AddTask(Id, Text, Total_Checks, Optional = false):
-	Tasks.append([Id, Text, Total_Checks, 0], Optional)
+	Tasks.append([Id, Text, Total_Checks, 0, Optional])
+	print (Tasks)
 	
 func CheckTask(Id, Checks = 1):
 	for t in Tasks:
@@ -55,6 +56,13 @@ func IsTaskCompleted(id):
 				return false
 	
 	print ("NO TASK FOUND")
+	return false
+
+func TaskExists(id):
+	for t in Tasks:
+		if (t[0] == id):
+			return true
+	
 	return false
 
 func RemoveTask(id):

@@ -2,10 +2,10 @@
 	{
 		"title": "Office_Door_02",
 		"tags": "",
-		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_CORRIDOR:28:-4:D>>\n<<END>>",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_CORRIDOR:28:-4:D>>\n<<IF>><<Day_Done b== true end>> 7:10\n<<SKIN.PG>><<res://Art/PG/PG.png>>\n<<REMOVE>><<KEYC01>>\n<<REMOVE>><<TASKLIST>>\n<<END>>",
 		"position": {
-			"x": 1508,
-			"y": 302
+			"x": 1212,
+			"y": -98
 		},
 		"colorID": 0
 	},
@@ -14,8 +14,8 @@
 		"tags": "",
 		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_LOCKERS:44:20:L>>\n<<END>>",
 		"position": {
-			"x": 1513,
-			"y": 85
+			"x": 1215,
+			"y": -329
 		},
 		"colorID": 0
 	},
@@ -24,18 +24,18 @@
 		"tags": "",
 		"body": "<<IF>><<inventory contains KEYC01 end>> 2:3\n[[Gate_Go]]\n[[Gate_NotGo]]",
 		"position": {
-			"x": 1177,
-			"y": -151
+			"x": 859,
+			"y": -171
 		},
 		"colorID": 0
 	},
 	{
 		"title": "Gate_Go",
 		"tags": "",
-		"body": "<<WAIT>><<0>>\n*bzz*\n<<BREAK>>\n<<PROP.TRG>><<Gate:IS_WALL:bool:false>>\n<<PROP.TRG>><<Gate:Frame:int:171>>\n<<END>>",
+		"body": "<<WAIT>><<0>>\n*bzz*\n<<BREAK>>\n<<PROP.TRG>><<Gate:IS_WALL:bool:false>>\n<<PROP.TRG>><<Gate:frame:int:171>>\n<<END>>",
 		"position": {
-			"x": 1515,
-			"y": -149
+			"x": 858,
+			"y": 105
 		},
 		"colorID": 0
 	},
@@ -44,8 +44,48 @@
 		"tags": "",
 		"body": "I need to get my keycard to get through.\n<<BREAK>>\n<<END>>",
 		"position": {
-			"x": 1777,
-			"y": -147
+			"x": 861,
+			"y": 347
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_03",
+		"tags": "",
+		"body": "<<IF>><<inventory contains TASKLIST end>> 2:3\n[[Office_Door_03_Go]]\n[[Office_Door_03_NotGo]]",
+		"position": {
+			"x": 1213,
+			"y": 137
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_03_NotGo",
+		"tags": "",
+		"body": "<<WALK.PG>><<REL:L:L:walk>>\nI need to get my list of tasks for today.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 1811,
+			"y": 128
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_03_Go",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_FLOOR:25:16:R>>\n<<END>>",
+		"position": {
+			"x": 1504,
+			"y": 138
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_04",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_OUT_ROOM:30:20:U>>\n<<END>>",
+		"position": {
+			"x": 1211,
+			"y": 364
 		},
 		"colorID": 0
 	}

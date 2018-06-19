@@ -17,7 +17,7 @@
 [ext_resource path="res://Art/UI/Map_D.png" type="Texture" id=15]
 [ext_resource path="res://Scripts/MapButton.gd" type="Script" id=16]
 
-[node name="Buttons" type="TextureRect"]
+[node name="Buttons" type="TextureRect" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0

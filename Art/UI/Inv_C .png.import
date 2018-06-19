@@ -7,10 +7,7 @@ path="res://.import/Inv_C .png-9346028a3a0dddaec89a1da346fcb503.stex"
 [deps]
 
 source_file="res://Art/UI/Inv_C .png"
-source_md5="583320707eeb080f1314ff1cc0562ec7"
-
 dest_files=[ "res://.import/Inv_C .png-9346028a3a0dddaec89a1da346fcb503.stex" ]
-dest_md5="79b5e46a72c495949e9da3db62e2d2b5"
 
 [params]
 

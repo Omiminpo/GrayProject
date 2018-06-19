@@ -1,0 +1,142 @@
+[
+	{
+		"title": "Sign",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\nITER MANAGEMENT Co. A great company, made of great people!\n<<BREAK>>\n<<PICTURE.BOX.SHOW>><<Pictures\\Logo.png>>\n<<BREAK>>\n<<PICTURE.BOX.HIDE>><<>>\n<<END>>",
+		"position": {
+			"x": -136,
+			"y": 73
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_In",
+		"tags": "",
+		"body": "<<IF>><<Can_Go_Work b== true end>> 2:3\n[[Office_Door_In_Go]]\n[[Office_Door_In_NotGo]]",
+		"position": {
+			"x": 797,
+			"y": 300
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_Out",
+		"tags": "",
+		"body": "<<IF>><<Day_Done b== true end>> 2:3\n[[Office_Door_Out_Go]]\n[[Office_Door_Out_NotGo]]",
+		"position": {
+			"x": 797,
+			"y": -32
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_Out_Go",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<DEFAULT:20:20:D>>\n<<END>>",
+		"position": {
+			"x": 1076,
+			"y": -30
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_Out_NotGo",
+		"tags": "",
+		"body": "<<WALK.PG>><<REL:U:U:walk>>\nI can't go home right now.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 1321,
+			"y": -31
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_In_Go",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_CORRIDOR:28:20:U>>\n<<END>>",
+		"position": {
+			"x": 1071,
+			"y": 306
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_In_NotGo",
+		"tags": "",
+		"body": "It's not the time to go there.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 1345,
+			"y": 315
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_In_INIT",
+		"tags": "",
+		"body": "<<IF>><<Can_Go_Work b== true end>> 2:3\n[[Office_Door_In_INIT_Go]]\n[[Office_Door_In_INIT_NotGo]]",
+		"position": {
+			"x": 799,
+			"y": 527
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_In_INIT_Go",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<PROP.TRG>><<DoorIn:IS_WALL:bool:false>>\n<<PROP.TRG>><<DoorIn:TYPE:string:ENT>>\n<<PROP.TRG>><<DoorIn2:IS_WALL:bool:false>>\n<<PROP.TRG>><<DoorIn2:TYPE:string:ENT>>\n<<END>>",
+		"position": {
+			"x": 1071,
+			"y": 528
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door_In_INIT_NotGo",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<PROP.TRG>><<DoorIn:IS_WALL:bool:true>>\n<<PROP.TRG>><<DoorIn:TYPE:string:TXT>>\n<<PROP.TRG>><<DoorIn2:IS_WALL:bool:true>>\n<<PROP.TRG>><<DoorIn2:TYPE:string:TXT>>\n<<END>>",
+		"position": {
+			"x": 1345,
+			"y": 536
+		},
+		"colorID": 0
+	},
+	{
+		"title": "InnerDoor1",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<PROP.TRG>><<InnerDoor1:IS_WALL:bool:false>>\n<<PROP.TRG>><<InnerDoor1:frame:int:55>>\n<<PROP.TRG>><<InnerDoor1:Interactable:bool:false>>\n<<END>>",
+		"position": {
+			"x": 799,
+			"y": -263
+		},
+		"colorID": 0
+	},
+	{
+		"title": "InnerDoor2",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<PROP.TRG>><<InnerDoor2:IS_WALL:bool:false>>\n<<PROP.TRG>><<InnerDoor2:frame:int:55>>\n<<PROP.TRG>><<InnerDoor2:Interactable:bool:false>>\n<<END>>",
+		"position": {
+			"x": 1076,
+			"y": -262
+		},
+		"colorID": 0
+	},
+	{
+		"title": "InnerDoor3",
+		"tags": "",
+		"body": "((0:1))<<WAIT>><<0>>\n((0:1))<<PROP.TRG>><<InnerDoor3:IS_WALL:bool:false>>\n((0:1))<<PROP.TRG>><<InnerDoor3:frame:int:55>>\n((0:1))<<PROP.TRG>><<InnerDoor3:Interactable:bool:false>>\n((0:1))<<END>>\n<<MOVE>><<OFFICE_CORRIDOR:28:20:U>>\n<<END>>",
+		"position": {
+			"x": 1311,
+			"y": -260
+		},
+		"colorID": 0
+	},
+	{
+		"title": "InnerDoor4",
+		"tags": "",
+		"body": "((0:1))<<WAIT>><<0>>\n((0:1))<<PROP.TRG>><<InnerDoor4:IS_WALL:bool:false>>\n((0:1))<<PROP.TRG>><<InnerDoor4:frame:int:55>>\n((0:1))<<PROP.TRG>><<InnerDoor4:Interactable:bool:false>>\n((0:1))<<END>>\n<<MOVE>><<OFFICE_CORRIDOR:28:20:U>>\n<<END>>",
+		"position": {
+			"x": 1535,
+			"y": -259
+		},
+		"colorID": 0
+	}
+]

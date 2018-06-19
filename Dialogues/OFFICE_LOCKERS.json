@@ -2,10 +2,30 @@
 	{
 		"title": "Locker",
 		"tags": "",
-		"body": "<<WAIT>><<0>>\n<<PROP.TRG>><<Gate:Frame:int:47>>\n<<GET>><<KEYC01>>\nObtained work clothes and Keycard\n<<BREAK>>\n<<END>>",
+		"body": "<<WAIT>><<0>>\n<<IF>><<Locker.frame i== 49 end>> 3:5\n<<PROP.TRG>><<Locker:frame:int:47>>\n[[Locker_Act]]\n<<PROP.TRG>><<Locker:frame:int:49>>\n[[Locker_Act]]",
 		"position": {
-			"x": 540,
-			"y": 260
+			"x": 296,
+			"y": -228
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Locker_Act",
+		"tags": "",
+		"body": "<<IF>><<inventory contains KEYC01 end>> 7:2\n<<GET>><<KEYC01>>\n<<SET>><<Inventory_Unlocked b= true>>\nObtained work clothes and Keycard\n<<BREAK>>\n<<SKIN.PG>><<res://Art/PG/PG_Work.png>>\n<<BOX.INVISIBLE>>\n<<END>>",
+		"position": {
+			"x": 309,
+			"y": 69
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_CENTER:20:22:R>>\n<<END>>",
+		"position": {
+			"x": 603,
+			"y": -242
 		},
 		"colorID": 0
 	}

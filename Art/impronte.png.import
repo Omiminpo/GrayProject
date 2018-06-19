@@ -7,10 +7,7 @@ path="res://.import/impronte.png-fa96e35bbdbb05c119adb49adcd74b63.stex"
 [deps]
 
 source_file="res://Art/impronte.png"
-source_md5="2dae6806ce09f7ea1b95f28dbf1f16ca"
-
 dest_files=[ "res://.import/impronte.png-fa96e35bbdbb05c119adb49adcd74b63.stex" ]
-dest_md5="440a84bed49fae927bbd17bd89c7da01"
 
 [params]
 

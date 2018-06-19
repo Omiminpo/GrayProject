@@ -7,10 +7,7 @@ path="res://.import/1.png-8d5ce55575ae9168c81bd37022d32437.stex"
 [deps]
 
 source_file="res://Atlas/1.png"
-source_md5="d47135ad0d0904defd7d0f4944e0c25a"
-
 dest_files=[ "res://.import/1.png-8d5ce55575ae9168c81bd37022d32437.stex" ]
-dest_md5="01b1e409a074c6480096e80d08b47d3c"
 
 [params]
 

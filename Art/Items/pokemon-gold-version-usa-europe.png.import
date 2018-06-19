@@ -7,10 +7,7 @@ path="res://.import/pokemon-gold-version-usa-europe.png-d60aa877f53d384af22fd827
 [deps]
 
 source_file="res://Art/Items/pokemon-gold-version-usa-europe.png"
-source_md5="008e96fc7eeb7fd1e37835df04d2c5f3"
-
 dest_files=[ "res://.import/pokemon-gold-version-usa-europe.png-d60aa877f53d384af22fd8271df455d3.stex" ]
-dest_md5="16d677e712d67acf56d9cc607713f20c"
 
 [params]
 

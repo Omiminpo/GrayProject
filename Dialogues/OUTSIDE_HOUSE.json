@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Sign_INIT",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<BOX.INVISIBLE>>\n<<WAIT>><<5>>\n<<WALK.TRG>><<Bus:24:13:L:BusAnim>>\n<<WAIT>><<7>>\n<<DESTROY.TRG>><<Cover>>\n<<WAIT>><<4>>\n<<WALK.PG>><<REL:U:U:walk>>\n<<WAIT>><<2>>\n<<WALK.TRG>><<Bus:10:13:L:Base>>\n<<END>>",
+		"position": {
+			"x": 540,
+			"y": 253
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Sign",
+		"tags": "",
+		"body": "That was the last bus for the night.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 831,
+			"y": 175
+		},
+		"colorID": 0
+	}
+]

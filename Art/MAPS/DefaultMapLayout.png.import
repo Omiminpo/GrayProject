@@ -7,10 +7,7 @@ path="res://.import/DefaultMapLayout.png-b1638eb1aa4025ad77ba54e53de33a0a.stex"
 [deps]
 
 source_file="res://Art/MAPS/DefaultMapLayout.png"
-source_md5="1e4d7d60ec09d8af27d10fcf8cbfe73f"
-
 dest_files=[ "res://.import/DefaultMapLayout.png-b1638eb1aa4025ad77ba54e53de33a0a.stex" ]
-dest_md5="95d912fa76072b7aa5d7859e69eaa9e9"
 
 [params]
 

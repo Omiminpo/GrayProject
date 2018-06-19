@@ -1,20 +1,37 @@
-OBJECT TAGS
+OBJECT TAGS 
 	TXT: Press to Execute
 	STP: Step to Execute
 	ENT: Entry to Execute (execute as soon as movement is made towards it)
 	AUT: Auto Execute
+	
+INSTRUCTION TAG
+((n:N))
+Only execute this if day is between n and N including n and N
 
 INSTRUCTIONS
-	<<IF>><<var1 cond value>>
-		cond:
+	<<TASK.CHECK>><<id:checks>>
+	<<TASK.CHECK.ALL>><<cond>> // obsolete
+		cond
+			all
+			main
+			optional
+	<<TASK.CLEAR>><<id>>
+	<<TASK.CLEAR.IF_COMPLETED>><<id>>
+	<<TASK.CLEAR.ALL>><<>>
+	<<TASK.CLEAR.ALL.IF_COMPLETED>><<cond>>
+	
+	<<TASK.ADD>><<ID:Text:Total_Checks:Optional>>
+
+	<<IF>><<var1 cond value end>>
+		cond
 			b==		: bool, equal
 			i==		: int, equal
 			>		: int, bigger
 			<		: int, smaller
 			<=		: int, smaller or equal
-			>=		: int, bigger or equal
+				>=		: int, bigger or equal
 	
-	<<IF>><<var1 cond var2>> gototrue:gotofalse
+	<<IF>><<var1 cond var2 conj var3 cond var2 end>> gototrue:gotofalse
 		cond:
 			vb==	: bool, equal
 			vi==	: int, equal
@@ -22,13 +39,25 @@ INSTRUCTIONS
 			v<		: int, smaller
 			v<=		: int, smaller or equal
 			v>=		: int, bigger or equal
+		
+		conj:
+			and
+			or
+			
 	
-	<<IF>><<inventory cond id>> gototrue:gotofalse
+	<<IF>><<inventory cond id end>> gototrue:gotofalse
 		cond:
 			contains: check if id is in inventory
 			lacks: check if id is not in inventory
 			
-	<<IF>><<player position x:y>>
+	<<IF>><<task cond id>>
+		cond:
+			completed [id = id]
+			open, not_completed [id = id]
+			all_completed [id = optional, main, all] 
+			task_exists
+			
+	<<IF>><<player position x:y end>>
 		position	: position equal to position xy
 		x>			: pos.x higher than xy	 
 		x<			: pos.x lower than xy		
@@ -52,7 +81,9 @@ INSTRUCTIONS
 			v*=		: multiply int variable from var1
 			
 	<<GET>><<id>>
+	<<REMOVE>><<id>>
 		add item id to inventory
+		
 		
 	<<CHOICE>><<question-text 1:goto 1:condition 1-text 2:goto 2:condition 2-text 3:goto 3:condition 3-text 4:goto 4:condition 4>>
 		Choice dialogue
@@ -103,10 +134,11 @@ INSTRUCTIONS
 			Cut: Cut transition
 		r g b: rgb value of transition
 		
-	<<MOVE>><<Area:X:Y>>
+	<<MOVE>><<Area:X:Y:dir>>
 		Area: the name of the aria the move leads top
 		X: X position of spawn
 		Y: Y position of spawn
+		dir: spawn direction (U,D,L,R)
 		
 	<<WALK.PG>><<x:y:direction:anim>>
 		Move character to x:y position
@@ -127,6 +159,45 @@ INSTRUCTIONS
 	
 	<<ANIM.TRG>><<target:animation:force>>
 		play animation
+	
+	<<WARP.PG>><<x:y>>
+			Instantly move to a x y
+
+	<<WARP.TRG>><<target:x:y>>
+			Instantly moves target object to a x y
+
+	<<SKIN.PG>><<url>>
+		Changes player spritesheet
+	
+	<<SPAWN>><<adress:name>>
+	
+	<<SCROLL.CAMERA>><<h_scroll:v_scroll>>
+		Accepts bool, true if the camera follows the player, false if it doesn't
+	
+	<<SHAKE>><<h:v:deplete>>
+		h strenght
+		v strenght
+		does it deplete
+	
+	<<PICTURE.SHOW>><<address>>
+	<<PICTURE.HIDE>><<>>
+	
+	<<MAP.SELECT>><<index>>
+	<<MAP.PLACE>><<x:y>>
+	
+	<<MENUS>><<task:items:map>>
+	
+	<<PICTURE.BOX.SHOW>><<address>>
+	<<PICTURE.BOX.HIDE>><<>>
+	
+	<<SHOW_VIDEO>><<address>>
+	<<HIDE_VIDEO>><<>>
+	
+	<<SAVE>><<>>
+	<<LOAD>><<>>
+	
+	<<DESTROY>><<>>
+	<<DESTROY.TRG>><<name>>
 	
 	<<BREAK>>
 		creates a break point, player needs to press enter to continue

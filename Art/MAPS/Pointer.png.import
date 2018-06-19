@@ -7,10 +7,7 @@ path="res://.import/Pointer.png-6b65890bca561d4469fa6dd3aee0118d.stex"
 [deps]
 
 source_file="res://Art/MAPS/Pointer.png"
-source_md5="ba05f3e809d298f4e8d2601998d720f9"
-
 dest_files=[ "res://.import/Pointer.png-6b65890bca561d4469fa6dd3aee0118d.stex" ]
-dest_md5="c7bcca14f47a5ab1e2db3fbb22d8bcd7"
 
 [params]
 

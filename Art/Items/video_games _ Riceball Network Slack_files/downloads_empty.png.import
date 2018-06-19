@@ -7,10 +7,7 @@ path="res://.import/downloads_empty.png-f4b871da46e8b28b3519385c0254fddc.stex"
 [deps]
 
 source_file="res://Art/Items/video_games _ Riceball Network Slack_files/downloads_empty.png"
-source_md5="d6987dc8187e84e7f02b25a3b80cacc7"
-
 dest_files=[ "res://.import/downloads_empty.png-f4b871da46e8b28b3519385c0254fddc.stex" ]
-dest_md5="29ff9f52d39765c2d3674825ad09faf8"
 
 [params]
 

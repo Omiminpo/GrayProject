@@ -7,10 +7,7 @@ path="res://.import/Laxe Logo.png-603dfa686d564a07cf5b0261ca3ec8a8.stex"
 [deps]
 
 source_file="res://Art/Laxe Logo.png"
-source_md5="2f6f9a6edf242c3e81d217cc52244fda"
-
 dest_files=[ "res://.import/Laxe Logo.png-603dfa686d564a07cf5b0261ca3ec8a8.stex" ]
-dest_md5="b76fc6c57ed30124a59daeda2035512c"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/Whiteout.png-4b9c599dae4fe82f8eae885db46860b7.stex"
 [deps]
 
 source_file="res://Art/Whiteout.png"
-source_md5="4b853d8a620f9fb413d322113c6a48e9"
-
 dest_files=[ "res://.import/Whiteout.png-4b9c599dae4fe82f8eae885db46860b7.stex" ]
-dest_md5="d61f498727c4f7e3cbc9d4e6ede31e9e"
 
 [params]
 

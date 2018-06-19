@@ -7,10 +7,7 @@ path="res://.import/Item_1 - Copy.png-31493dc2fadd647f5c080ede073f4508.stex"
 [deps]
 
 source_file="res://Art/Items/Item_1 - Copy.png"
-source_md5="447c6bc2088a5a6c5b95b4bc11261fb9"
-
 dest_files=[ "res://.import/Item_1 - Copy.png-31493dc2fadd647f5c080ede073f4508.stex" ]
-dest_md5="1443f185cff3f9047e625196b05c8dcf"
 
 [params]
 

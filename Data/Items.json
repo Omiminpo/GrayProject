@@ -1,8 +1,23 @@
 {
+  "PAPERS01":{
+    "Name": "Papers",
+    "Description": "My eyes scan over them, but cannot fixate on any word of their content.",
+    "Picture": "Papers"
+  },
   "KEYC01": {
     "Name": "Keycard",
-    "Description": "Grants nightly access to the Iter Management Co. offices. It has someone else's photo on it, but it's been erased with a black marker.",
+    "Description": "It has someone else's photo on it. It was erased with a black marker.",
     "Picture": "Keycard"
+  },
+  "KEY_EC_INNER": {
+    "Name": "Corridor Key",
+    "Description": "It opens the inner doors of the external corridor.",
+    "Picture": "Key"
+  },
+  "TASKLIST": {
+    "Name": "List",
+    "Description": "Today's dutys. Check your tasklist for details.",
+    "Picture": "Tasklist"
   },
   "DEF_01": {
     "Name": "OBJECT 1",

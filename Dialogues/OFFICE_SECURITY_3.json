@@ -1,0 +1,122 @@
+[
+	{
+		"title": "Can",
+		"tags": "",
+		"body": "Empty.\n<<BREAK>>\n...\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 513,
+			"y": 79
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Shelves",
+		"tags": "",
+		"body": "Books.\n<<BREAK>>\nNothing catches my eye.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 508,
+			"y": 304
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Screen",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<IF>><<task task_exists D1T1 end>> 3:25\n<<TASK.CHECK>><<D1T1:1>>\n<<DESTROY.TRG>><<Screen>>\n<<SET>><<Screen3 b= false>>\n...\n<<BREAK>>\n...\n<<BREAK>>\n...\n<<BREAK>>\nNothing of notice.\n<<BREAK>>\n<<IF>><<task completed D1T1 end>> 15:22\nMy round is done for tonight.\n<<BREAK>>\nHome...\n<<BREAK>>\n<<TASK.CLEAR>><<D1T1>>\n<<SET>><<Day_Done b= true>>\n<<END>>\nOnto the next one.\n<<BREAK>>\n<<END>>\nThe security feed is running regularly. The world is reflected on the screen in muted colours.\n<<BREAK>>\nNothing seems to be out of the ordinary.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 284,
+			"y": 64
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Debugger",
+		"tags": "",
+		"body": "<<TASK.ADD>><<D1T1:Check the status of the four security stations:4:false>>\n<<TASK.CHECK>><<D1T1:3>>\n<<END>>",
+		"position": {
+			"x": -47,
+			"y": 78
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Screen_INIT",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<IF>><<Screen3 b== true end>> 4:3\n<<DESTROY.TRG>><<Screen>>\n<<END>>",
+		"position": {
+			"x": 288,
+			"y": 307
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Papers",
+		"tags": "",
+		"body": "Someone must have left these here...\n<<BREAK>>\n<<GET>><<PAPERS01>>\n<<DESTROY.TRG>><<Papers>>\n<<END>>",
+		"position": {
+			"x": 505,
+			"y": 529
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Office_Door",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_FLOOR:64:28:D>>\n<<END>>",
+		"position": {
+			"x": 745,
+			"y": 80
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Box1",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<IF>><<Box1.frame i== 217 end>> 3:5\n<<PROP.TRG>><<Box1:frame:int:239>>\n<<END>>\nEmpty.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": -2,
+			"y": -233
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Box2",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<IF>><<Box2.frame i== 215 end>> 3:5\n<<PROP.TRG>><<Box2:frame:int:237>>\n<<END>>\nEmpty.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 207,
+			"y": -236
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Box3",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<IF>><<Box3.frame i== 216 end>> 3:5\n<<PROP.TRG>><<Box3:frame:int:238>>\n<<END>>\nEmpty.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 420,
+			"y": -237
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Box4",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<IF>><<Box4.frame i== 215 end>> 3:5\n<<PROP.TRG>><<Box4:frame:int:237>>\n<<END>>\nEmpty.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 635,
+			"y": -239
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Box5",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<IF>><<Box5.frame i== 217 end>> 3:5\n<<PROP.TRG>><<Box5:frame:int:239>>\n<<END>>\nEmpty.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 864,
+			"y": -240
+		},
+		"colorID": 0
+	}
+]

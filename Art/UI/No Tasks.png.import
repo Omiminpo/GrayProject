@@ -7,10 +7,7 @@ path="res://.import/No Tasks.png-92d22a8ff3cd6bbe89534acad2bf5ad7.stex"
 [deps]
 
 source_file="res://Art/UI/No Tasks.png"
-source_md5="bc12ddd0cb9b25f5e5d1a82f3f0052d0"
-
 dest_files=[ "res://.import/No Tasks.png-92d22a8ff3cd6bbe89534acad2bf5ad7.stex" ]
-dest_md5="395c4cb19df4a8285f6936b9a5dd10c0"
 
 [params]
 

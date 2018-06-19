@@ -7,10 +7,7 @@ path="res://.import/BasePanel.png-150477b91c81f982029ee2977fc866b2.stex"
 [deps]
 
 source_file="res://Art/UI/BasePanel.png"
-source_md5="6f3a2017065a0c96b202f1250dce90af"
-
 dest_files=[ "res://.import/BasePanel.png-150477b91c81f982029ee2977fc866b2.stex" ]
-dest_md5="e31df14b53fddc4f729e0256a08e6590"
 
 [params]
 

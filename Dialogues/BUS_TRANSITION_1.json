@@ -1,0 +1,12 @@
+[
+	{
+		"title": "Dialogue_INIT",
+		"tags": "",
+		"body": "<<WAIT>><<1>>\n...\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\nThe Bus is almost empty.\n<<BREAK>>\nA couple is sitting on the back row. They mutter words that can't quite be heard.\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\nIt's a unusually smooth trip.\n<<BREAK>>\nMost stops are empty, so the driver doesn’t bother stopping at them.\n<<BREAK>>\nThey just sail on, guided by the orange lights on the sides of the street.\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\nThe couple has now got off the bus.\n<<BREAK>>\nThey walk away from the stop.\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\nThe night moves on.\n<<BREAK>>\nThe sky is now dimly brightening.\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\n \n<<WAIT>><<0.5>>\n...\n<<BREAK>>\n<<WAIT>><<1>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<MOVE>><<OUTSIDE_HOUSE:25:13:D>>\n<<END>>\n",
+		"position": {
+			"x": 540,
+			"y": 256
+		},
+		"colorID": 2
+	}
+]

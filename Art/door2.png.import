@@ -7,10 +7,7 @@ path="res://.import/door2.png-cb3872d8119993c782d9d3810d7bf120.stex"
 [deps]
 
 source_file="res://Art/door2.png"
-source_md5="f044edbfdbf51d3f537f3ace912e4cde"
-
 dest_files=[ "res://.import/door2.png-cb3872d8119993c782d9d3810d7bf120.stex" ]
-dest_md5="cd24fe85d65e3c98781836c1cead612a"
 
 [params]
 

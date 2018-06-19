@@ -7,10 +7,7 @@ path="res://.import/Map.png-1ac5579c1c218c376fe953de7f201495.stex"
 [deps]
 
 source_file="res://Art/UI/Map.png"
-source_md5="ce5726290f55ed218bc0613dbab6466e"
-
 dest_files=[ "res://.import/Map.png-1ac5579c1c218c376fe953de7f201495.stex" ]
-dest_md5="fa1bb521e2fa36a4fdf53aefc11a525d"
 
 [params]
 

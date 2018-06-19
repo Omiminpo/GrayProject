@@ -7,6 +7,7 @@ var NEXT_ZONE
 var SPAWN_POSITION_X
 var SPAWN_POSITION_Y
 var INVENTORY
+var NEW_SKIN
 
 func Save():
 	VARIABLES = inst2dict(Variables)
@@ -16,7 +17,7 @@ func Save():
 	SPAWN_POSITION_X = Global.SPAWN_POSITION.x
 	SPAWN_POSITION_Y = Global.SPAWN_POSITION.y
 	INVENTORY = Global.INVENTORY.duplicate()
-	
+	NEW_SKIN = Global.NEW_SKIN
 	
 	var newsave = File.new()
 	newsave.open("user://savegame.save", File.WRITE)
@@ -36,6 +37,7 @@ func Load():
 		Global.NEXT_ZONE = current_data.ZONE
 		Global.SPAWN_POSITION = Vector2( int(current_data.SPAWN_POSITION_X), int(current_data.SPAWN_POSITION_Y) )
 		Global.INVENTORY = current_data.INVENTORY.duplicate()
+		Global.NEW_SKIN = current_data.NEW_SKIN
 		Tasklist_Manager.Tasks = current_data.TASKS.duplicate()
 		
 		var var_keys = current_data.VARIABLES.keys()

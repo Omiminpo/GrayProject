@@ -7,10 +7,7 @@ path="res://.import/doortemp.png-6e2fdb2982744799fa0fa773ecabd26f.stex"
 [deps]
 
 source_file="res://Art/doortemp.png"
-source_md5="ef52b3ca14616d9ec4066c7428b93f06"
-
 dest_files=[ "res://.import/doortemp.png-6e2fdb2982744799fa0fa773ecabd26f.stex" ]
-dest_md5="400c5935ab6b222299c40c393716b576"
 
 [params]
 

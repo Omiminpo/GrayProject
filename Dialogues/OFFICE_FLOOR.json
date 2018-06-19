@@ -1,0 +1,122 @@
+[
+	{
+		"title": "Inner_Door",
+		"tags": "",
+		"body": "<<IF>><<inventory contains KEY_EC_INNER end>> 2:3\n[[Inner_Door_GO]]\n[[Inner_Door_NO_GO]]",
+		"position": {
+			"x": 550,
+			"y": 243
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Inner_Door_NO_GO",
+		"tags": "",
+		"body": "It's locked...\n<<BREAK>>\nI wonder if I could get a key for this... it would make things way easier\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 1184,
+			"y": 243
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Inner_Door_GO",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<PROP.TRG>><<InnerDoor1:IS_WALL:bool:false>>\n<<PROP.TRG>><<InnerDoor1:frame:int:55>>\n<<PROP.TRG>><<InnerDoor1:Interactable:bool:false>>\n*click*\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 821,
+			"y": 249
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Security_Sign",
+		"tags": "",
+		"body": "Security Room\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 186,
+			"y": 471
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Inner_Door2",
+		"tags": "",
+		"body": "<<IF>><<inventory contains KEY_EC_INNER end>> 2:3\n[[Inner_Door2_GO]]\n[[Inner_Door2_NO_GO]]",
+		"position": {
+			"x": 548,
+			"y": 494
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Inner_Door2_GO",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<PROP.TRG>><<InnerDoor2:IS_WALL:bool:false>>\n<<PROP.TRG>><<InnerDoor2:frame:int:55>>\n<<PROP.TRG>><<InnerDoor2:Interactable:bool:false>>\n*click*\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 821,
+			"y": 494
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Inner_Door2_NO_GO",
+		"tags": "",
+		"body": "It's locked...\n<<BREAK>>\nI wonder if I could get a key for it... it would make things way easier\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 1209,
+			"y": 511
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Security_Door_1",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_SECURITY_1:28:19:U>>\n<<END>>",
+		"position": {
+			"x": 549,
+			"y": -1
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Back_Door",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_CENTER:37:15:L>>\n<<END>>",
+		"position": {
+			"x": 238,
+			"y": -1
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Security_Door_2",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_SECURITY_2:28:19:U>>\n<<END>>",
+		"position": {
+			"x": 765,
+			"y": -6
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Security_Door_3",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_SECURITY_3:28:19:U>>\n<<END>>",
+		"position": {
+			"x": 989,
+			"y": -7
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Security_Door_4",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_SECURITY_4:28:19:U>>\n<<END>>",
+		"position": {
+			"x": 1208,
+			"y": -7
+		},
+		"colorID": 0
+	}
+]

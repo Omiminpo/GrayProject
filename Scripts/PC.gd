@@ -6,7 +6,7 @@ extends Sprite
 var TIPE = "PC"
 
 const TRASHOLD_FOR_MOVING = 0.2
-const SPEED = 1
+const SPEED = 1.2
 const RUN_SPEED = 2
 
 const DOWN = 0
@@ -49,6 +49,7 @@ func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here 
 	animation = get_node("PC_Anikm")
+	animation.playback_speed = 1.5
 	direction = DOWN
 	effective_direction = direction
 	state = IDLE
@@ -69,7 +70,10 @@ func _ready():
 	FloorGrid = GridManager.get_node("Floor")
 	
 	set_position(Grid.map_to_world(Global.SPAWN_POSITION))
+
 	Turn(Global.SPAWN_DIR)
+	if (Global.NEW_SKIN != ""):
+		texture = load(Global.NEW_SKIN)
 	
 	pass
 
@@ -139,8 +143,7 @@ func _input(event):
 		
 	if (Global.Skip):
 		Global.Skip = false
-		
-		return
+		return	
 	
 	#check old presses on release
 	if (( event.is_action_released("Move_Down") and direction == DOWN ) or 

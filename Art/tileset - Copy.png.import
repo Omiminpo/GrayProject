@@ -7,10 +7,7 @@ path="res://.import/tileset - Copy.png-196f608986a0ac61731c9dcb7b36b4d3.stex"
 [deps]
 
 source_file="res://Art/tileset - Copy.png"
-source_md5="8938e5493f9e3ef860d369c2191abde3"
-
 dest_files=[ "res://.import/tileset - Copy.png-196f608986a0ac61731c9dcb7b36b4d3.stex" ]
-dest_md5="8b19f3c16bdf1588627ee90100679f94"
 
 [params]
 

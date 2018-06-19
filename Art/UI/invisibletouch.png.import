@@ -7,10 +7,7 @@ path="res://.import/invisibletouch.png-3e9a1f33385013e0e43bce17bd3483ce.stex"
 [deps]
 
 source_file="res://Art/UI/invisibletouch.png"
-source_md5="91c415a5d04cfdc5cc2c493b8ebf1c19"
-
 dest_files=[ "res://.import/invisibletouch.png-3e9a1f33385013e0e43bce17bd3483ce.stex" ]
-dest_md5="93cf606f90c44e19e6735f4221a3a4b7"
 
 [params]
 

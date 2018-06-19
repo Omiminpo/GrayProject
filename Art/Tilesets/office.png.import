@@ -7,10 +7,7 @@ path="res://.import/office.png-1a7fd98e255a87e9b601473766f2d41a.stex"
 [deps]
 
 source_file="res://Art/Tilesets/office.png"
-source_md5="0608a67903d2e44c158afee293c8a5b4"
-
 dest_files=[ "res://.import/office.png-1a7fd98e255a87e9b601473766f2d41a.stex" ]
-dest_md5="41ccc8fff8d6f8f4dcb1063a4e36f3a3"
 
 [params]
 

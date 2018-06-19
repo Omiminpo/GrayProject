@@ -59,6 +59,10 @@ var _disabler
 var _alone
 var _fnScript
 
+var non_interactable
+
+var frameskip = 2
+
 func _ready():
 	set_process_input(true)
 	set_process(true)
@@ -81,6 +85,9 @@ func Adapt():
 
 func _input(event):
 	if ( Global.Menu_State != Global.MENU_STATES.None ):#
+		return
+		
+	if (non_interactable):
 		return
 		
 	if (event.is_action_pressed("Look")):
@@ -133,6 +140,13 @@ func _input(event):
 				_textbox.set_text(_full_line)
 	
 func _process(delta):
+	
+	if (frameskip <= 0):
+		if (_visible):
+			show()
+	else:
+		frameskip -= 1
+	
 	# Process Typing
 	if ( Global.Menu_State != Global.MENU_STATES.None ):#
 		return
@@ -159,6 +173,7 @@ func _process(delta):
 							_current_timer = ProcessAltNumbers(c) * _timing_multiplier * 10
 			
 			_type_timer = _current_timer
+			
 	# Process Typing
 	match (_mode):
 		BREAK:
@@ -207,17 +222,20 @@ func SetText(txt):
 	
 	_full_line = txt
 	
-func Set_textbox(ObjectID, stand_alone = false, filename_script = "", objectself = null, disabler = false):
+func Set_textbox(ObjectID, stand_alone = false, filename_script = "", objectself = null, disabler = false, dis_com = false, ni = false):
 	# Load Dialogue File
 	var file = File.new()
 	var address_name
 	_self_item = objectself
 	
+	non_interactable = ni
 	_alone = stand_alone
 	_fnScript = filename_script
 	_disabler = disabler
 	if (_disabler):
 		Global.Menus_Enabled = [false, false, false]
+	
+	if (dis_com):
 		Global.Dialogue_Going = true
 	
 	if (stand_alone):
@@ -239,8 +257,14 @@ func Set_textbox(ObjectID, stand_alone = false, filename_script = "", objectself
 	
 	ProcessScript()
 	
-func Parse_line():
-	var instruction = _body[_line]
+func Parse_line(override_instruction = false, override_instruction_line = ""):
+	var instruction
+	
+	if (override_instruction):
+		instruction = override_instruction_line
+	else:
+		instruction = _body[_line]
+		
 	var char_pos = 0
 	var i = 0
 	print (instruction, " ", _line)
@@ -254,6 +278,16 @@ func Parse_line():
 			char_pos = i + 3
 			
 			match (cmd.to_upper()):
+				"TEXTBOX":
+					i = Find_Cmd(instruction, char_pos, '>')
+					var cmd_txt = instruction.substr(char_pos, i - char_pos - 1)
+					char_pos = i + 1
+					
+					match (cmd_txt):
+						"up", "UP", "U", "u", "Up":
+							position = Vector2(142, 30)
+						"down", "DOWN", "D", "d", "Down":
+							position = Vector2(142, 130)
 				"IF":
 					#Get Code
 					i = Find_Cmd(instruction, char_pos, '>')
@@ -267,6 +301,7 @@ func Parse_line():
 					else:
 						_line = int(cmd_result[1]) - 1
 					
+				
 				"SET":
 					#Get Code
 					i = Find_Cmd(instruction, char_pos, '>')
@@ -414,7 +449,7 @@ func Parse_line():
 							_overrides = [true, false]
 						"type", "typing":
 							_overrides = [false, true]
-						"nexttype", "next_type", "next type":
+						"nexttype", "next_type", "next type", "both":
 							_overrides = [true, true]
 						"clear":
 							_overrides = [false, false]
@@ -713,6 +748,19 @@ func Parse_line():
 					
 					_line += 1
 					
+				"SKIN.PG":
+					i = Find_Cmd(instruction, char_pos, '>')
+					var cmd_txt = instruction.substr(char_pos, i - char_pos - 1)
+					char_pos = i + 1
+					
+					var pc = get_node("/root/Node2D/TileManager/Walls/PC")
+					
+					pc.texture = load(cmd_txt)
+					
+					Global.NEW_SKIN = cmd_txt
+							
+					_line += 1
+					
 				"PICTURE.SHOW":
 					i = Find_Cmd(instruction, char_pos, '>')
 					var cmd_txt = instruction.substr(char_pos, i - char_pos - 1)
@@ -812,6 +860,18 @@ func Parse_line():
 												
 					_line += 1
 					
+				"TASK.ADD":
+					i = Find_Cmd(instruction, char_pos, '>')
+					var cmd_txt = instruction.substr(char_pos, i - char_pos - 1)
+					char_pos = i + 1
+					
+					var cmd_result = cmd_txt.split(":")
+					
+					Tasklist_Manager.AddTask(cmd_result[0], cmd_result[1], int(cmd_result[2]), Global.StringToBool(cmd_result[3]))
+												
+					_line += 1
+					
+					
 				"MAP.SELECT":
 					i = Find_Cmd(instruction, char_pos, '>')
 					var cmd_txt = instruction.substr(char_pos, i - char_pos - 1)
@@ -852,6 +912,27 @@ func Parse_line():
 					
 					_line += 1
 					
+				"DESTROY.TRG":
+					i = Find_Cmd(instruction, char_pos, '>')
+					var cmd_txt = instruction.substr(char_pos, i - char_pos - 1)
+					char_pos = i + 1
+					
+					var cmd_result = cmd_txt.split(":")
+						
+					var pc
+					
+					print (get_node("/root/Node2D/TileManager/" + cmd_result[0]))
+					if (has_node("/root/Node2D/TileManager/" + cmd_result[0])):
+						pc = get_node("/root/Node2D/TileManager/" + cmd_result[0])
+					else:
+						pc = get_node("/root/Node2D/TileManager/Walls/" + cmd_result[0])
+					
+					if (pc != null):
+						get_parent().get_parent().get_parent().get_parent().RemoveItem(pc)
+						pc.queue_free()
+					
+					_line += 1
+					
 				"BREAK":
 					_mode = BREAK
 					
@@ -876,6 +957,22 @@ func Parse_line():
 			
 			_nextNode = cmd
 			_mode = NEXTNODE
+		
+		"((":
+			char_pos = 2
+			
+			i = Find_Cmd(instruction, char_pos, ')')
+			var cmd = instruction.substr(char_pos, i - char_pos - 1).split(":")
+			var char2erase = instruction.substr(char_pos, i - char_pos - 1).length()
+			
+			if (Variables.Days >= int(cmd[0]) and Variables.Days <= int(cmd[1]) ):
+				instruction.erase(0, 4+char2erase)
+				Parse_line(true, instruction)
+			else:
+				_line += 1
+			#
+		"##":
+			_line += 1
 		_:
 			SetText(instruction)
 			_line += 1

@@ -7,10 +7,7 @@ path="res://.import/Egg.png-17f54d7d8fa94be30c3e436ae418508d.stex"
 [deps]
 
 source_file="res://Art/Egg.png"
-source_md5="ad06944fb406e1302f9f4c20dc618c5e"
-
 dest_files=[ "res://.import/Egg.png-17f54d7d8fa94be30c3e436ae418508d.stex" ]
-dest_md5="a35c923298021b306d25f2a026722a9e"
 
 [params]
 

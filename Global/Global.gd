@@ -49,6 +49,8 @@ var Menus_Enabled = [true, true, true]
 
 var temp_save
 
+var NEW_SKIN = ""
+
 
 onready var root = get_tree().root
 onready var base_size = root.get_visible_rect().size
@@ -211,7 +213,18 @@ func Parse_Dialogue_Condition (cmd, loop_start = 0):
 	
 	var comp
 	if (cmd_array[loop_start] != "inventory" and cmd_array[loop_start] != "task"):
-		comp = Variables.get( cmd_array[loop_start] )
+		if ( cmd_array[loop_start].split(".").size() > 1):
+			var pc
+			
+			if (has_node("/root/Node2D/TileManager/" + cmd_array[loop_start].split(".")[0])):
+				pc = get_node("/root/Node2D/TileManager/" + cmd_array[loop_start].split(".")[0])
+			else:
+				pc = get_node("/root/Node2D/TileManager/Walls/" + cmd_array[loop_start].split(".")[0])
+				
+			comp = pc.get(cmd_array[loop_start].split(".")[1])
+			
+		else:
+			comp = Variables.get( cmd_array[loop_start] )
 	
 	match cmd_array[loop_start + 1]:
 		"b==":
@@ -262,6 +275,8 @@ func Parse_Dialogue_Condition (cmd, loop_start = 0):
 			result = Tasklist_Manager.IsTaskCompleted(cmd_array[loop_start + 2])
 		"not_completed", "Not_Completed", "nc", "n_c", "open", "Open":
 			result = !Tasklist_Manager.IsTaskCompleted(cmd_array[loop_start + 2])
+		"task_exists", "Task_Exists", "task_Exists", "Task_exists", "Task_Exist", "task_exist", "TaskExists", "TaskExist", "taskexists", "taskexist":
+			result = Tasklist_Manager.TaskExists(cmd_array[loop_start + 2])
 		"all_completed", "All_Completed", "allcompleted", "AllCompleted":
 			match (cmd_array[loop_start + 2]):
 				"all", "a", "All":

@@ -7,10 +7,7 @@ path="res://.import/Pokemon-Gold_3.jpg-4d58eed9a3af70056fd4cca204e29b02.stex"
 [deps]
 
 source_file="res://Art/Items/Pokemon-Gold_3.jpg"
-source_md5="4878cf0a373c7c46cb6095ab85dc3f7d"
-
 dest_files=[ "res://.import/Pokemon-Gold_3.jpg-4d58eed9a3af70056fd4cca204e29b02.stex" ]
-dest_md5="7e442b74b0cd8234ad40d83c25e19b47"
 
 [params]
 

@@ -16,6 +16,7 @@ _sections_unfolded = [ "Extra Spacing", "Font", "Resource", "Settings" ]
 
 [node name="Textbox" type="Sprite"]
 
+visible = false
 position = Vector2( 142, 130 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )

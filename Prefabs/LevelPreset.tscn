@@ -3,10 +3,10 @@
 [ext_resource path="res://Scripts/TileManager.gd" type="Script" id=1]
 [ext_resource path="res://Art/FloorTiles.res" type="TileSet" id=2]
 [ext_resource path="res://Scripts/Floor.gd" type="Script" id=3]
-[ext_resource path="res://Art/AttemptTileset.res" type="TileSet" id=4]
+[ext_resource path="res://Art/Tilesets/office.res" type="TileSet" id=4]
 [ext_resource path="res://Prefabs/PC.tscn" type="PackedScene" id=5]
 
-[node name="TileManager" type="YSort"]
+[node name="TileManager" type="YSort" index="0"]
 
 sort_enabled = false
 script = ExtResource( 1 )
@@ -37,7 +37,7 @@ _sections_unfolded = [ "Cell", "Transform" ]
 [node name="Accessories_Floor" type="TileMap" parent="." index="1"]
 
 mode = 0
-tile_set = ExtResource( 2 )
+tile_set = ExtResource( 4 )
 cell_size = Vector2( 16, 16 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
@@ -81,7 +81,7 @@ _sections_unfolded = [ "Cell" ]
 [node name="Accessories_Ceiling" type="TileMap" parent="." index="3"]
 
 mode = 0
-tile_set = ExtResource( 2 )
+tile_set = ExtResource( 4 )
 cell_size = Vector2( 16, 16 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )

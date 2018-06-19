@@ -7,10 +7,7 @@ path="res://.import/picture1.png-a100f3f26430aa2e3bcce05d5224b789.stex"
 [deps]
 
 source_file="res://Art/palettes/picture1.png"
-source_md5="fe0f5360bcfdbe2266716bc0548bba25"
-
 dest_files=[ "res://.import/picture1.png-a100f3f26430aa2e3bcce05d5224b789.stex" ]
-dest_md5="bdb1069a123799717cf9ebc1cd78238e"
 
 [params]
 

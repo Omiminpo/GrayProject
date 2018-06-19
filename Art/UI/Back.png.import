@@ -7,10 +7,7 @@ path="res://.import/Back.png-e0d7aa972b1cb42800228bba85b6532c.stex"
 [deps]
 
 source_file="res://Art/UI/Back.png"
-source_md5="4541ce836f49263466aa0874dd236da8"
-
 dest_files=[ "res://.import/Back.png-e0d7aa972b1cb42800228bba85b6532c.stex" ]
-dest_md5="d0c827c590c5da8afc2dd70287095cce"
 
 [params]
 

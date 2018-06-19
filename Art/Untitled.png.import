@@ -7,10 +7,7 @@ path="res://.import/Untitled.png-2d3c2896464ac958339bb6b65fd266d8.stex"
 [deps]
 
 source_file="res://Art/Untitled.png"
-source_md5="9ea11c122d0fd43fd7413e15f47f7b3d"
-
 dest_files=[ "res://.import/Untitled.png-2d3c2896464ac958339bb6b65fd266d8.stex" ]
-dest_md5="6d20312155d691a9db77eb25b4a13aa1"
 
 [params]
 

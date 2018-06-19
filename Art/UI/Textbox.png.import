@@ -7,10 +7,7 @@ path="res://.import/Textbox.png-46e3704e6b6a5ffcafb7e8fac0b681b1.stex"
 [deps]
 
 source_file="res://Art/UI/Textbox.png"
-source_md5="0f3c81a7b79696eb58d17b489064d6c3"
-
 dest_files=[ "res://.import/Textbox.png-46e3704e6b6a5ffcafb7e8fac0b681b1.stex" ]
-dest_md5="d685f8477e74ae5bd91317c919d0f588"
 
 [params]
 

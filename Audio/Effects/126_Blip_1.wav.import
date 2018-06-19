@@ -7,10 +7,7 @@ path="res://.import/126_Blip_1.wav-2cf27711ccd2e6439913b630cb2ad016.sample"
 [deps]
 
 source_file="res://Audio/Effects/126_Blip_1.wav"
-source_md5="8c33c01a5f83797cce1266f07858ea60"
-
 dest_files=[ "res://.import/126_Blip_1.wav-2cf27711ccd2e6439913b630cb2ad016.sample" ]
-dest_md5="a18f89b0a546bbdabf66ea01ebb17e22"
 
 [params]
 

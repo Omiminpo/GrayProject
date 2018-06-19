@@ -1,0 +1,1614 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Art/Tilesets/OutsideFloor.png" type="Texture" id=1]
+[ext_resource path="res://Art/Tilesets/Lamp.png" type="Texture" id=2]
+[ext_resource path="res://Art/Tilesets/Trees.png" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D" index="0"]
+
+[node name="OutsideFloor001" type="Sprite" parent="." index="0"]
+
+position = Vector2( 16, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor002" type="Sprite" parent="." index="1"]
+
+position = Vector2( 32, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 1
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor003" type="Sprite" parent="." index="2"]
+
+position = Vector2( 48, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 2
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor004" type="Sprite" parent="." index="3"]
+
+position = Vector2( 64, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 3
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor005" type="Sprite" parent="." index="4"]
+
+position = Vector2( 80, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 5
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor006" type="Sprite" parent="." index="5"]
+
+position = Vector2( 112, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 6
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor007" type="Sprite" parent="." index="6"]
+
+position = Vector2( 128, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 7
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="OutsideFloor008" type="Sprite" parent="." index="7"]
+
+position = Vector2( 144, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 8
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor009" type="Sprite" parent="." index="8"]
+
+position = Vector2( 160, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 9
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor010" type="Sprite" parent="." index="9"]
+
+position = Vector2( 176, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 10
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor011" type="Sprite" parent="." index="10"]
+
+position = Vector2( 192, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 11
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor012" type="Sprite" parent="." index="11"]
+
+position = Vector2( 208, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 12
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor013" type="Sprite" parent="." index="12"]
+
+position = Vector2( 224, 16 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 13
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor014" type="Sprite" parent="." index="13"]
+
+position = Vector2( 16, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 14
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor015" type="Sprite" parent="." index="14"]
+
+position = Vector2( 32, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 15
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor016" type="Sprite" parent="." index="15"]
+
+position = Vector2( 48, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 16
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor017" type="Sprite" parent="." index="16"]
+
+position = Vector2( 64, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 17
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor018" type="Sprite" parent="." index="17"]
+
+position = Vector2( 80, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 18
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor019" type="Sprite" parent="." index="18"]
+
+position = Vector2( 96, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 19
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor020" type="Sprite" parent="." index="19"]
+
+position = Vector2( 112, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 20
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor021" type="Sprite" parent="." index="20"]
+
+position = Vector2( 128, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 21
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor022" type="Sprite" parent="." index="21"]
+
+position = Vector2( 144, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 22
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor023" type="Sprite" parent="." index="22"]
+
+position = Vector2( 160, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 23
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor024" type="Sprite" parent="." index="23"]
+
+position = Vector2( 176, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 24
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor025" type="Sprite" parent="." index="24"]
+
+position = Vector2( 192, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 25
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor026" type="Sprite" parent="." index="25"]
+
+position = Vector2( 208, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 26
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor027" type="Sprite" parent="." index="26"]
+
+position = Vector2( 224, 32 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 27
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor028" type="Sprite" parent="." index="27"]
+
+position = Vector2( 16, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 28
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor029" type="Sprite" parent="." index="28"]
+
+position = Vector2( 32, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 29
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor030" type="Sprite" parent="." index="29"]
+
+position = Vector2( 48, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 30
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor031" type="Sprite" parent="." index="30"]
+
+position = Vector2( 64, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 31
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor032" type="Sprite" parent="." index="31"]
+
+position = Vector2( 80, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 32
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor033" type="Sprite" parent="." index="32"]
+
+position = Vector2( 96, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 33
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor034" type="Sprite" parent="." index="33"]
+
+position = Vector2( 112, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 34
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor035" type="Sprite" parent="." index="34"]
+
+position = Vector2( 128, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 35
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor036" type="Sprite" parent="." index="35"]
+
+position = Vector2( 144, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 36
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor037" type="Sprite" parent="." index="36"]
+
+position = Vector2( 160, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 37
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor038" type="Sprite" parent="." index="37"]
+
+position = Vector2( 176, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 38
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor039" type="Sprite" parent="." index="38"]
+
+position = Vector2( 192, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 39
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor040" type="Sprite" parent="." index="39"]
+
+position = Vector2( 208, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 40
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor041" type="Sprite" parent="." index="40"]
+
+position = Vector2( 224, 48 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 41
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor042" type="Sprite" parent="." index="41"]
+
+position = Vector2( 16, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 42
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor043" type="Sprite" parent="." index="42"]
+
+position = Vector2( 32, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 43
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor044" type="Sprite" parent="." index="43"]
+
+position = Vector2( 48, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 44
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor045" type="Sprite" parent="." index="44"]
+
+position = Vector2( 64, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 45
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor046" type="Sprite" parent="." index="45"]
+
+position = Vector2( 80, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 46
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="OutsideFloor047" type="Sprite" parent="." index="46"]
+
+position = Vector2( 96, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 47
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor048" type="Sprite" parent="." index="47"]
+
+position = Vector2( 112, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 48
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor049" type="Sprite" parent="." index="48"]
+
+position = Vector2( 128, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 49
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor050" type="Sprite" parent="." index="49"]
+
+position = Vector2( 144, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 50
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor051" type="Sprite" parent="." index="50"]
+
+position = Vector2( 160, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 51
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor052" type="Sprite" parent="." index="51"]
+
+position = Vector2( 176, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 52
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor053" type="Sprite" parent="." index="52"]
+
+position = Vector2( 192, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 53
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor054" type="Sprite" parent="." index="53"]
+
+position = Vector2( 208, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 54
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor055" type="Sprite" parent="." index="54"]
+
+position = Vector2( 224, 64 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 55
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor056" type="Sprite" parent="." index="55"]
+
+position = Vector2( 16, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 56
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor057" type="Sprite" parent="." index="56"]
+
+position = Vector2( 32, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 57
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor058" type="Sprite" parent="." index="57"]
+
+position = Vector2( 48, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 58
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor059" type="Sprite" parent="." index="58"]
+
+position = Vector2( 64, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 59
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor060" type="Sprite" parent="." index="59"]
+
+position = Vector2( 80, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 60
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor061" type="Sprite" parent="." index="60"]
+
+position = Vector2( 96, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 61
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor062" type="Sprite" parent="." index="61"]
+
+position = Vector2( 112, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 62
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor063" type="Sprite" parent="." index="62"]
+
+position = Vector2( 128, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 63
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor064" type="Sprite" parent="." index="63"]
+
+position = Vector2( 144, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 64
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor065" type="Sprite" parent="." index="64"]
+
+position = Vector2( 160, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 65
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor066" type="Sprite" parent="." index="65"]
+
+position = Vector2( 176, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 66
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor067" type="Sprite" parent="." index="66"]
+
+position = Vector2( 192, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 67
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor068" type="Sprite" parent="." index="67"]
+
+position = Vector2( 208, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 68
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor069" type="Sprite" parent="." index="68"]
+
+position = Vector2( 224, 80 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 69
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor070" type="Sprite" parent="." index="69"]
+
+position = Vector2( 16, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 70
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor071" type="Sprite" parent="." index="70"]
+
+position = Vector2( 32, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 71
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor072" type="Sprite" parent="." index="71"]
+
+position = Vector2( 48, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 72
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor073" type="Sprite" parent="." index="72"]
+
+position = Vector2( 64, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 73
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor074" type="Sprite" parent="." index="73"]
+
+position = Vector2( 80, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 74
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor075" type="Sprite" parent="." index="74"]
+
+position = Vector2( 96, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 75
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor076" type="Sprite" parent="." index="75"]
+
+position = Vector2( 112, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 76
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor077" type="Sprite" parent="." index="76"]
+
+position = Vector2( 128, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 77
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor078" type="Sprite" parent="." index="77"]
+
+position = Vector2( 144, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 78
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor079" type="Sprite" parent="." index="78"]
+
+position = Vector2( 160, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 79
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor080" type="Sprite" parent="." index="79"]
+
+position = Vector2( 176, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 80
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor081" type="Sprite" parent="." index="80"]
+
+position = Vector2( 192, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 81
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor082" type="Sprite" parent="." index="81"]
+
+position = Vector2( 208, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 82
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor083" type="Sprite" parent="." index="82"]
+
+position = Vector2( 224, 96 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 83
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor084" type="Sprite" parent="." index="83"]
+
+position = Vector2( 16, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 84
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor085" type="Sprite" parent="." index="84"]
+
+position = Vector2( 32, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 85
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor086" type="Sprite" parent="." index="85"]
+
+position = Vector2( 48, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 86
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor087" type="Sprite" parent="." index="86"]
+
+position = Vector2( 64, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 87
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor088" type="Sprite" parent="." index="87"]
+
+position = Vector2( 80, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 88
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor089" type="Sprite" parent="." index="88"]
+
+position = Vector2( 96, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 89
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor090" type="Sprite" parent="." index="89"]
+
+position = Vector2( 112, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 90
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor091" type="Sprite" parent="." index="90"]
+
+position = Vector2( 128, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 91
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="OutsideFloor092" type="Sprite" parent="." index="91"]
+
+position = Vector2( 144, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 92
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor093" type="Sprite" parent="." index="92"]
+
+position = Vector2( 160, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 93
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor094" type="Sprite" parent="." index="93"]
+
+position = Vector2( 176, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 94
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor095" type="Sprite" parent="." index="94"]
+
+position = Vector2( 192, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 95
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor096" type="Sprite" parent="." index="95"]
+
+position = Vector2( 208, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 96
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor097" type="Sprite" parent="." index="96"]
+
+position = Vector2( 224, 112 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 97
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor098" type="Sprite" parent="." index="97"]
+
+position = Vector2( 16, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 98
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor099" type="Sprite" parent="." index="98"]
+
+position = Vector2( 32, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 99
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor100" type="Sprite" parent="." index="99"]
+
+position = Vector2( 48, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 100
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor101" type="Sprite" parent="." index="100"]
+
+position = Vector2( 64, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 101
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor102" type="Sprite" parent="." index="101"]
+
+position = Vector2( 80, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 102
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor103" type="Sprite" parent="." index="102"]
+
+position = Vector2( 96, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 103
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor104" type="Sprite" parent="." index="103"]
+
+position = Vector2( 112, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 104
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor105" type="Sprite" parent="." index="104"]
+
+position = Vector2( 128, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 105
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor106" type="Sprite" parent="." index="105"]
+
+position = Vector2( 144, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 106
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor107" type="Sprite" parent="." index="106"]
+
+position = Vector2( 160, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 107
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor108" type="Sprite" parent="." index="107"]
+
+position = Vector2( 176, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 108
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor109" type="Sprite" parent="." index="108"]
+
+position = Vector2( 192, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 109
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor110" type="Sprite" parent="." index="109"]
+
+position = Vector2( 208, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 110
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor111" type="Sprite" parent="." index="110"]
+
+position = Vector2( 224, 128 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 111
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor112" type="Sprite" parent="." index="111"]
+
+position = Vector2( 16, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 112
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor113" type="Sprite" parent="." index="112"]
+
+position = Vector2( 32, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 113
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor114" type="Sprite" parent="." index="113"]
+
+position = Vector2( 48, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 114
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor115" type="Sprite" parent="." index="114"]
+
+position = Vector2( 64, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 115
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor116" type="Sprite" parent="." index="115"]
+
+position = Vector2( 80, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 116
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor117" type="Sprite" parent="." index="116"]
+
+position = Vector2( 96, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 117
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor118" type="Sprite" parent="." index="117"]
+
+position = Vector2( 112, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 118
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor119" type="Sprite" parent="." index="118"]
+
+position = Vector2( 128, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 119
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor120" type="Sprite" parent="." index="119"]
+
+position = Vector2( 144, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 120
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor121" type="Sprite" parent="." index="120"]
+
+position = Vector2( 160, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 121
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor122" type="Sprite" parent="." index="121"]
+
+position = Vector2( 176, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 122
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor123" type="Sprite" parent="." index="122"]
+
+position = Vector2( 192, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 123
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor124" type="Sprite" parent="." index="123"]
+
+position = Vector2( 208, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 124
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor125" type="Sprite" parent="." index="124"]
+
+position = Vector2( 224, 144 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 125
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor126" type="Sprite" parent="." index="125"]
+
+position = Vector2( 16, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 126
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor127" type="Sprite" parent="." index="126"]
+
+position = Vector2( 32, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 127
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor128" type="Sprite" parent="." index="127"]
+
+position = Vector2( 48, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 128
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor129" type="Sprite" parent="." index="128"]
+
+position = Vector2( 64, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 129
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor130" type="Sprite" parent="." index="129"]
+
+position = Vector2( 80, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 130
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="OutsideFloor131" type="Sprite" parent="." index="130"]
+
+position = Vector2( 96, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 131
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor132" type="Sprite" parent="." index="131"]
+
+position = Vector2( 112, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 132
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor133" type="Sprite" parent="." index="132"]
+
+position = Vector2( 128, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 133
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor134" type="Sprite" parent="." index="133"]
+
+position = Vector2( 144, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 134
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor135" type="Sprite" parent="." index="134"]
+
+position = Vector2( 160, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 135
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="OutsideFloor136" type="Sprite" parent="." index="135"]
+
+position = Vector2( 176, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 136
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor137" type="Sprite" parent="." index="136"]
+
+position = Vector2( 192, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 137
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor138" type="Sprite" parent="." index="137"]
+
+position = Vector2( 208, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 138
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor139" type="Sprite" parent="." index="138"]
+
+position = Vector2( 224, 160 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 139
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor140" type="Sprite" parent="." index="139"]
+
+position = Vector2( 16, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 140
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor141" type="Sprite" parent="." index="140"]
+
+position = Vector2( 32, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 141
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor142" type="Sprite" parent="." index="141"]
+
+position = Vector2( 48, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 142
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor143" type="Sprite" parent="." index="142"]
+
+position = Vector2( 64, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 143
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor144" type="Sprite" parent="." index="143"]
+
+position = Vector2( 80, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 144
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor145" type="Sprite" parent="." index="144"]
+
+position = Vector2( 96, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 145
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor146" type="Sprite" parent="." index="145"]
+
+position = Vector2( 112, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 146
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="OutsideFloor147" type="Sprite" parent="." index="146"]
+
+position = Vector2( 128, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 147
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="OutsideFloor148" type="Sprite" parent="." index="147"]
+
+position = Vector2( 144, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 148
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor149" type="Sprite" parent="." index="148"]
+
+position = Vector2( 160, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 149
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor150" type="Sprite" parent="." index="149"]
+
+position = Vector2( 176, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 150
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor151" type="Sprite" parent="." index="150"]
+
+position = Vector2( 192, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 151
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor152" type="Sprite" parent="." index="151"]
+
+position = Vector2( 208, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 152
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor153" type="Sprite" parent="." index="152"]
+
+position = Vector2( 224, 176 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 153
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="OutsideFloor154" type="Sprite" parent="." index="153"]
+
+position = Vector2( 16, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 154
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor155" type="Sprite" parent="." index="154"]
+
+position = Vector2( 32, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 155
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor156" type="Sprite" parent="." index="155"]
+
+position = Vector2( 48, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 156
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor157" type="Sprite" parent="." index="156"]
+
+position = Vector2( 64, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 157
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor158" type="Sprite" parent="." index="157"]
+
+position = Vector2( 64, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 158
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="OutsideFloor159" type="Sprite" parent="." index="158"]
+
+position = Vector2( 64, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 159
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor160" type="Sprite" parent="." index="159"]
+
+position = Vector2( 64, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 160
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="OutsideFloor161" type="Sprite" parent="." index="160"]
+
+position = Vector2( 64, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 161
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor162" type="Sprite" parent="." index="161"]
+
+position = Vector2( 80, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 162
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor163" type="Sprite" parent="." index="162"]
+
+position = Vector2( 96, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 163
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor164" type="Sprite" parent="." index="163"]
+
+position = Vector2( 112, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 164
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor165" type="Sprite" parent="." index="164"]
+
+position = Vector2( 128, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 165
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor166" type="Sprite" parent="." index="165"]
+
+position = Vector2( 144, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 166
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor167" type="Sprite" parent="." index="166"]
+
+position = Vector2( 160, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 167
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor168" type="Sprite" parent="." index="167"]
+
+position = Vector2( 176, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 168
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor169" type="Sprite" parent="." index="168"]
+
+position = Vector2( 192, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 169
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor170" type="Sprite" parent="." index="169"]
+
+position = Vector2( 208, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 170
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor171" type="Sprite" parent="." index="170"]
+
+position = Vector2( 224, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 171
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor172" type="Sprite" parent="." index="171"]
+
+position = Vector2( 256, 32 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 0, -16 )
+vframes = 7
+hframes = 14
+frame = 33
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor173" type="Sprite" parent="." index="172"]
+
+position = Vector2( 272, 32 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 0, -16 )
+vframes = 7
+hframes = 14
+frame = 47
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor175" type="Sprite" parent="." index="173"]
+
+position = Vector2( 208, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 171
+_sections_unfolded = [ "Animation" ]
+
+[node name="OutsideFloor176" type="Sprite" parent="." index="174"]
+
+position = Vector2( 224, 192 )
+texture = ExtResource( 1 )
+vframes = 14
+hframes = 14
+frame = 171
+_sections_unfolded = [ "Animation" ]
+
+[node name="Lamp" type="Sprite" parent="." index="175"]
+
+position = Vector2( 256, 80 )
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( 0, -48 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="Trees" type="Sprite" parent="." index="176"]
+
+position = Vector2( 304, 128 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( 0, -32 )
+hframes = 2
+frame = 1
+_sections_unfolded = [ "Animation", "Offset" ]
+
+[node name="Trees2" type="Sprite" parent="." index="177"]
+
+position = Vector2( 288, 80 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( 0, -32 )
+hframes = 2
+_sections_unfolded = [ "Offset", "Region" ]
+
+

@@ -15,6 +15,9 @@ export var DISABLE_COMMANDS_INIT = false
 export var TYPE_OF_FOOTPRINT = 0
 export var DISABLER = true
 export var DISABLER_INIT = false
+export var STARTS_UP = false
+export var IGNORE_WALLS = false
+export var NON_INTERACTABLE = false
 
 var Activated = 0
 
@@ -23,8 +26,10 @@ func Activate_Script():
 		var txtbox = load("res://Prefabs/Textbox.tscn")
 		var txtbox_instance = txtbox.instance()
 		txtbox_instance.set_name("Textbox")
-		txtbox_instance.Set_textbox(ID, STAND_ALONE_LOADER, ID, self, DISABLER)
+		txtbox_instance.Set_textbox(ID, STAND_ALONE_LOADER, ID, self, DISABLER, DISABLE_COMMANDS, NON_INTERACTABLE)
 		get_node("/root/Node2D/TileManager/Walls/PC/UI").call_deferred("add_child", txtbox_instance)
+		if (STARTS_UP):
+			txtbox_instance.position = Vector2(142, 30)
 		Global.Pg_Stopped = STOP_PLAYER
 		Global.Ui_Mode = DISABLE_COMMANDS
 	
@@ -35,14 +40,16 @@ func Activate_InitScript():
 	var txtbox = load("res://Prefabs/Textbox.tscn")
 	var txtbox_instance = txtbox.instance()
 	txtbox_instance.set_name("Textbox")
-	txtbox_instance.Set_textbox(ID + "_INIT", STAND_ALONE_LOADER, ID, self, DISABLER_INIT)
+	txtbox_instance.Set_textbox(ID + "_INIT", STAND_ALONE_LOADER, ID, self, DISABLER_INIT, NON_INTERACTABLE)
 	get_node("/root/Node2D/TileManager/Walls/PC/UI").call_deferred("add_child", txtbox_instance)
+	if (STARTS_UP):
+		txtbox_instance.position = Vector2(142, 30)
 	Global.Pg_Stopped = STOP_PLAYER_INIT
 	Global.Ui_Mode = DISABLE_COMMANDS_INIT
 	
 #MOVING
-export var SPEED = 1
-export var RUN_SPEED = 2
+export var SPEED = 1.0
+export var RUN_SPEED = 2.0
 
 const DOWN = 0
 const LEFT = 1
@@ -143,7 +150,7 @@ func _processQueque():
 			if (MoveQueue[0][3] == "relative"):
 				target += GetCoor()
 			
-			if (GridManager.IsFree(target) and target != pc.GetCoor()):
+			if ((GridManager.IsFree(target) or IGNORE_WALLS) and target != pc.GetCoor()):
 				TurnAround(DirQueue[0])
 				DirQueue.pop_front()
 				

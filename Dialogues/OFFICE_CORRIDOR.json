@@ -4,8 +4,8 @@
 		"tags": "",
 		"body": "<<WAIT>><<0>>\nITER MANAGEMENT Co. A great company, made of great people!\n<<BREAK>>\n<<PICTURE.BOX.SHOW>><<Pictures\\Logo.png>>\n<<BREAK>>\n<<PICTURE.BOX.HIDE>><<>>\n<<END>>",
 		"position": {
-			"x": -136,
-			"y": 73
+			"x": 569,
+			"y": 107
 		},
 		"colorID": 0
 	},
@@ -22,7 +22,7 @@
 	{
 		"title": "Office_Door_02",
 		"tags": "",
-		"body": "<<IF>><<Can_Go_Home b== true end>> 2:3\n[[Office_Door_02_Go]]\n[[Office_Door_02_NotGo]]",
+		"body": "<<IF>><<Day_Done b== true end>> 2:3\n[[Office_Door_02_Go]]\n[[Office_Door_02_NotGo]]",
 		"position": {
 			"x": 802,
 			"y": 89
@@ -32,10 +32,10 @@
 	{
 		"title": "Office_Door_02_Go",
 		"tags": "",
-		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<DEFAULT:20:20:D>>\n<<END>>",
+		"body": "##DAY1\n<<SET>><<Can_Go_Work b= false>>\n##\n<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_RECEPTION:26:15:D>>\n<<END>>",
 		"position": {
-			"x": 1068,
-			"y": 86
+			"x": 1071,
+			"y": 82
 		},
 		"colorID": 0
 	},
