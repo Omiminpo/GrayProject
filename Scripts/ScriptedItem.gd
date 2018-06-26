@@ -18,6 +18,7 @@ export var DISABLER_INIT = false
 export var STARTS_UP = false
 export var IGNORE_WALLS = false
 export var NON_INTERACTABLE = false
+export var DELETE_QUEUE_ON_FAIL = true
 
 var Activated = 0
 
@@ -150,13 +151,20 @@ func _processQueque():
 			if (MoveQueue[0][3] == "relative"):
 				target += GetCoor()
 			
-			if ((GridManager.IsFree(target) or IGNORE_WALLS) and target != pc.GetCoor()):
+			if ((GridManager.IsFree(target) or IGNORE_WALLS) and target != pc.GetCoor() and target != pc.GetNextIfMoving()):
 				TurnAround(DirQueue[0])
 				DirQueue.pop_front()
 				
 				Move(Grid.map_to_world(target)) 
 				PlayAnimation(MoveQueue[0][2])
 				MoveQueue.pop_front()
+			else:
+				if (DELETE_QUEUE_ON_FAIL):
+					TurnAround(DirQueue[0])
+					DirQueue.pop_front()
+					
+					MoveQueue.pop_front()
+					
 				
 		return true
 	else:

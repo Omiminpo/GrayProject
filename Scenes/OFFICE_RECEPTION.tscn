@@ -4,7 +4,7 @@
 [ext_resource path="res://Art/Tilesets/OfficeFloors.res" type="TileSet" id=2]
 [ext_resource path="res://Prefabs/Door.tscn" type="PackedScene" id=3]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" index="0"]
 
 _sections_unfolded = [ "Transform", "Z Index" ]
 
@@ -19,71 +19,107 @@ tile_data = PoolIntArray( 720932, 6, 0, 720933, 6, 0, 720934, 6, 0, 720935, 6, 0
 
 tile_data = PoolIntArray( 2883634, 92, 0, 2883635, 92, 0, 2883636, 92, 0, 2883637, 92, 0, 2883638, 92, 0 )
 
-[node name="Walls" parent="TileManager" index="2"]
+[node name="DoorIn" parent="TileManager" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 416, 224 )
+ID = "Office_Door_In"
+LOAD_AT_START = true
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
+
+[node name="DoorIn2" parent="TileManager" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 432, 224 )
+ID = "Office_Door_In"
+LOAD_AT_START = true
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
+
+[node name="Walls" parent="TileManager" index="4"]
 
 tile_data = PoolIntArray( 524323, 7, 0, 524324, 7, 0, 524325, 7, 0, 524326, 7, 0, 524327, 7, 0, 524328, 7, 0, 524329, 7, 0, 524330, 7, 0, 524331, 7, 0, 524332, 7, 0, 524333, 7, 0, 524334, 7, 0, 524335, 7, 0, 524336, 7, 0, 524337, 7, 0, 524338, 7, 0, 589859, 7, 0, 589860, 115, 0, 589861, 117, 0, 589862, 117, 0, 589863, 117, 0, 589864, 117, 0, 589865, 117, 0, 589866, 117, 0, 589867, 117, 0, 589868, 117, 0, 589869, 117, 0, 589870, 117, 0, 589871, 117, 0, 589872, 117, 0, 589873, 116, 0, 589874, 7, 0, 655395, 7, 0, 655396, 123, 0, 655397, 125, 0, 655398, 125, 0, 655399, 125, 0, 655400, 125, 0, 655401, 125, 0, 655402, 125, 0, 655403, 125, 0, 655404, 125, 0, 655405, 125, 0, 655406, 125, 0, 655407, 125, 0, 655408, 125, 0, 655409, 124, 0, 655410, 7, 0, 720931, 7, 0, 720946, 7, 0, 786467, 7, 0, 786482, 7, 0, 852003, 7, 0, 852006, 7, 0, 852007, 7, 0, 852008, 7, 0, 852009, 7, 0, 852010, 7, 0, 852011, 7, 0, 852012, 7, 0, 852013, 7, 0, 852014, 7, 0, 852015, 7, 0, 852018, 7, 0, 917529, 7, 0, 917532, 7, 0, 917539, 7, 0, 917542, 7, 0, 917551, 7, 0, 917554, 7, 0, 983065, 7, 0, 983068, 7, 0, 983075, 7, 0, 983078, 7, 0, 983087, 7, 0, 983090, 7, 0, 1048601, 7, 0, 1048604, 7, 0, 1048611, 7, 0, 1048614, 7, 0, 1048623, 7, 0, 1048626, 7, 0, 1114137, 7, 0, 1114140, 7, 0, 1114147, 7, 0, 1114150, 7, 0, 1114159, 7, 0, 1114162, 7, 0, 1179673, 7, 0, 1179676, 7, 0, 1179683, 7, 0, 1179686, 7, 0, 1179695, 7, 0, 1179698, 7, 0, 1245209, 7, 0, 1245212, 7, 0, 1245219, 7, 0, 1245222, 7, 0, 1245231, 7, 0, 1245234, 7, 0, 1310745, 7, 0, 1310748, 7, 0, 1310755, 7, 0, 1310758, 7, 0, 1310767, 7, 0, 1310770, 7, 0, 1376281, 7, 0, 1376284, 7, 0, 1376291, 7, 0, 1376294, 7, 0, 1376303, 7, 0, 1376306, 7, 0, 1441817, 7, 0, 1441820, 7, 0, 1441821, 7, 0, 1441822, 7, 0, 1441823, 7, 0, 1441824, 7, 0, 1441825, 7, 0, 1441826, 7, 0, 1441827, 7, 0, 1441830, 7, 0, 1441839, 7, 0, 1441842, 7, 0, 1507353, 7, 0, 1507356, 115, 0, 1507357, 117, 0, 1507358, 117, 0, 1507359, 117, 0, 1507360, 117, 0, 1507361, 117, 0, 1507362, 117, 0, 1507363, 116, 0, 1507366, 7, 0, 1507375, 7, 0, 1507378, 7, 0, 1572889, 7, 0, 1572892, 123, 0, 1572893, 125, 0, 1572894, 125, 0, 1572895, 125, 0, 1572896, 125, 0, 1572897, 125, 0, 1572898, 125, 0, 1572899, 124, 0, 1572902, 7, 0, 1572911, 7, 0, 1572914, 7, 0, 1638425, 7, 0, 1638438, 7, 0, 1638447, 7, 0, 1638450, 7, 0, 1703961, 7, 0, 1703974, 7, 0, 1703983, 7, 0, 1703986, 7, 0, 1769497, 7, 0, 1769498, 7, 0, 1769499, 7, 0, 1769500, 7, 0, 1769501, 7, 0, 1769502, 7, 0, 1769503, 7, 0, 1769504, 7, 0, 1769505, 7, 0, 1769506, 7, 0, 1769507, 7, 0, 1769508, 7, 0, 1769509, 7, 0, 1769510, 7, 0, 1769519, 7, 0, 1769522, 7, 0, 1835055, 7, 0, 1835058, 7, 0, 1900591, 7, 0, 1900594, 7, 0, 1966127, 7, 0, 1966130, 7, 0, 2031663, 7, 0, 2031666, 7, 0, 2097199, 7, 0, 2097202, 7, 0, 2162735, 7, 0, 2162738, 7, 0, 2228271, 7, 0, 2228274, 7, 0, 2293807, 7, 0, 2293810, 7, 0, 2359343, 7, 0, 2359346, 7, 0, 2424879, 7, 0, 2424882, 7, 0, 2490415, 7, 0, 2490418, 7, 0, 2555951, 7, 0, 2555954, 7, 0, 2621487, 7, 0, 2621490, 7, 0, 2687021, 7, 0, 2687022, 7, 0, 2687023, 7, 0, 2687026, 7, 0, 2687027, 7, 0, 2687028, 7, 0, 2687029, 7, 0, 2687030, 7, 0, 2687031, 7, 0, 2752557, 7, 0, 2752558, 22, 0, 2752559, 1073741848, 0, 2752562, 1073741848, 0, 2752563, 24, 0, 2752564, 24, 0, 2752565, 24, 0, 2752566, 23, 0, 2752567, 7, 0, 2818093, 7, 0, 2818094, 41, 0, 2818095, 42, 0, 2818098, 41, 0, 2818099, 43, 0, 2818100, 43, 0, 2818101, 43, 0, 2818102, 42, 0, 2818103, 7, 0, 2883629, 7, 0, 2883639, 7, 0, 2949165, 7, 0, 2949166, 53, 0, 2949167, 14, 0, 2949175, 7, 0, 3014701, 7, 0, 3014702, 11, 0, 3014703, 36, 0, 3014707, 8, 0, 3014708, 9, 0, 3014709, 10, 0, 3014711, 7, 0, 3080237, 7, 0, 3080239, 36, 0, 3080243, 48, 0, 3080244, 49, 0, 3080245, 50, 0, 3080247, 7, 0, 3145773, 7, 0, 3145774, 53, 0, 3145775, 35, 0, 3145783, 7, 0, 3211309, 7, 0, 3211319, 7, 0, 3276845, 7, 0, 3276846, 7, 0, 3276847, 7, 0, 3276848, 7, 0, 3276852, 7, 0, 3276853, 7, 0, 3276854, 7, 0, 3276855, 7, 0 )
 
-[node name="Accessories_Ceiling" parent="TileManager" index="3"]
+[node name="Accessories_Ceiling" parent="TileManager" index="5"]
 
 tile_data = PoolIntArray( 589860, 1073741936, 0, 589864, 1073741936, 0, 589868, 1073741936, 0, 589872, 1073741936, 0, 1507358, 1073741936, 0, 1507361, 1073741936, 0, 2752559, 1073741936, 0, 2752560, 1073741973, 0, 2752561, 1073741973, 0, 2752563, 1073741936, 0, 2752565, 1073741936, 0 )
 
-[node name="DoorOut" parent="TileManager" index="4" instance=ExtResource( 3 )]
+[node name="DoorOut" parent="TileManager" index="6" instance=ExtResource( 3 )]
 
 position = Vector2( 816, 800 )
 frame = 7
 ID = "Office_Door_Out"
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
 
-[node name="DoorOut2" parent="TileManager" index="5" instance=ExtResource( 3 )]
+[node name="DoorOut2" parent="TileManager" index="7" instance=ExtResource( 3 )]
 
 position = Vector2( 800, 800 )
 frame = 7
 ID = "Office_Door_Out"
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
 
-[node name="DoorOut3" parent="TileManager" index="6" instance=ExtResource( 3 )]
+[node name="DoorOut3" parent="TileManager" index="8" instance=ExtResource( 3 )]
 
 position = Vector2( 784, 800 )
 frame = 7
 ID = "Office_Door_Out"
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
 
-[node name="InnerDoor1" parent="TileManager" index="7" instance=ExtResource( 3 )]
+[node name="InnerDoor1" parent="TileManager" index="9" instance=ExtResource( 3 )]
 
 position = Vector2( 768, 640 )
 IS_WALL = true
 TYPE = "TXT"
 ID = "InnerDoor1"
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
 
-[node name="InnerDoor2" parent="TileManager" index="8" instance=ExtResource( 3 )]
+[node name="InnerDoor2" parent="TileManager" index="10" instance=ExtResource( 3 )]
 
 position = Vector2( 784, 640 )
 IS_WALL = true
 TYPE = "TXT"
 ID = "InnerDoor2"
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
 
-[node name="InnerDoor3" parent="TileManager" index="9" instance=ExtResource( 3 )]
+[node name="InnerDoor3" parent="TileManager" index="11" instance=ExtResource( 3 )]
 
 position = Vector2( 784, 688 )
 IS_WALL = true
 TYPE = "TXT"
 ID = "InnerDoor3"
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
 
-[node name="InnerDoor4" parent="TileManager" index="10" instance=ExtResource( 3 )]
+[node name="InnerDoor4" parent="TileManager" index="12" instance=ExtResource( 3 )]
 
 position = Vector2( 768, 688 )
 IS_WALL = true
 TYPE = "TXT"
 ID = "InnerDoor4"
-
-[node name="DoorIn" parent="TileManager" index="11" instance=ExtResource( 3 )]
-
-position = Vector2( 416, 224 )
-ID = "Office_Door_In"
-LOAD_AT_START = true
-
-[node name="DoorIn2" parent="TileManager" index="12" instance=ExtResource( 3 )]
-
-position = Vector2( 432, 224 )
-ID = "Office_Door_In"
-LOAD_AT_START = true
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
 
 
 [editable path="TileManager"]

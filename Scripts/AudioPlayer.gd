@@ -10,7 +10,7 @@ func _ready():
 		_effects.append("")
 
 func PlayMusic(effect):
-	var stream = load("res://Audio/Music/" + effect + ".wav")
+	var stream = load("res://Audio/Music/" + effect )
 	
 	stream.loop_mode = AudioStreamSample.LOOP_FORWARD
 	
@@ -28,7 +28,7 @@ func PlayEffect(effect, loop = false):
 			skip = false
 		else:
 			if (!player.playing):
-				var stream = load("res://Audio/Effects/" + effect + ".wav")
+				var stream = load("res://Audio/Effects/" + effect )
 				if (loop):
 					stream.loop_mode = AudioStreamSample.LOOP_FORWARD
 				player.stream = stream
@@ -39,7 +39,7 @@ func PlayEffect(effect, loop = false):
 		i += 1
 	
 	if (!found):
-		var stream = load("res://Audio/Effects/" + effect + ".wav")
+		var stream = load("res://Audio/Effects/" + effect )
 		if (loop):
 			stream.loop_mode = AudioStreamSample.LOOP_FORWARD
 		_players[1].stream = stream

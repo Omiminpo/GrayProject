@@ -15,14 +15,14 @@
 		"body": "<<WAIT>><<0>>\n<<IF>><<Needs_Tasklist b== false end>> 3:4\n<<DESTROY.TRG>><<Tasklist>>\n<<END>>",
 		"position": {
 			"x": 1296,
-			"y": -359
+			"y": -361
 		},
 		"colorID": 0
 	},
 	{
 		"title": "Tasklist",
 		"tags": "",
-		"body": "<<WAIT>><<0>>\n<<GET>><<TASKLIST>>\n<<SET>><<Taskbar_Unlocked b= true>>\n<<SET>><<Needs_Tasklist b= false>>\n<<DESTROY.TRG>><<Tasklist>>\n<<TASK.ADD>><<D1T1:Check the status of the four security stations:4:false>>\nList obtained.\n<<BREAK>>\nYou can now check your tasklist.\n<<BREAK>>\n<<END>>",
+		"body": "<<WAIT>><<0>>\n<<GET>><<TASKLIST>>\n<<SET>><<Taskbar_Unlocked b= true>>\n<<SET>><<Needs_Tasklist b= false>>\n<<DESTROY.TRG>><<Tasklist>>\n((0:2))<<TASK.ADD>><<D1T1:Check the status of the four security stations:4:false>>\nList obtained.\n<<BREAK>>\nYou can now check your tasklist.\n<<BREAK>>\n<<END>>",
 		"position": {
 			"x": 1078,
 			"y": -363

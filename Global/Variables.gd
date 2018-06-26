@@ -15,6 +15,13 @@ var Default_Var_1 = false
 var Default_Var_2 = true
 var Default_Var_3 = true
 
+#DREAM#
+var Column = 0
+var Mourner = 0
+var Tree_of_Myself = 0
+var Pins = 0
+var Wings = 0
+
 #OUTSIDEOFFICE#
 var Longwalk = true
 

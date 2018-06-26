@@ -1,0 +1,42 @@
+[
+	{
+		"title": "Clothes",
+		"tags": "",
+		"body": "Some clothes. They're somewhat old.\n<<BREAK>>\nI despise most of these.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 396,
+			"y": 181
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Trash",
+		"tags": "",
+		"body": "I'll take out these trash bags tomorrow.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 656,
+			"y": 187
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Computer",
+		"tags": "",
+		"body": "I don't see the point of doing that.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 918,
+			"y": 185
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Door_Out",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<OFFICE_RECEPTION:50:49:U>>\n<<END>>",
+		"position": {
+			"x": 383,
+			"y": -131
+		},
+		"colorID": 0
+	}
+]

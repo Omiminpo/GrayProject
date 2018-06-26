@@ -1,0 +1,52 @@
+[
+	{
+		"title": "Clothes",
+		"tags": "",
+		"body": "Some clothes. They're somewhat old.\n<<BREAK>>\nI despise most of these.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 396,
+			"y": 181
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Trash",
+		"tags": "",
+		"body": "I'll take out these trash bags tomorrow.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 656,
+			"y": 187
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Computer",
+		"tags": "",
+		"body": "I don't see the point of doing that.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 918,
+			"y": 185
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Door_To_Dreams",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n((0:0))[[Dream_1]]\n<<END>>",
+		"position": {
+			"x": 572,
+			"y": -208
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Dream_1",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<SOUND>><<PlayFX:Sleep.ogg>>\n<<WAIT>><<5>>\n<<MOVE>><<THE_DREAM:32:16:D>>\n<<END>>",
+		"position": {
+			"x": 860,
+			"y": -210
+		},
+		"colorID": 0
+	}
+]

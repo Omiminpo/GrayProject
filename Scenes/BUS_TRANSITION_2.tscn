@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/InitScene.gd" type="Script" id=1]
+[ext_resource path="res://Prefabs/LevelPreset.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Prefabs/Door.tscn" type="PackedScene" id=3]
+
+[node name="Node2D" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="TileManager" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="Scripter" parent="TileManager" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( -16, -16 )
+scale = Vector2( 21, 14 )
+frame = 7
+TYPE = "TXT"
+ID = "Dialogue"
+LOAD_AT_START = true
+STOP_PLAYER_INIT = true
+DISABLE_COMMANDS_INIT = true
+DISABLER_INIT = true
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+
+
+[editable path="TileManager"]

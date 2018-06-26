@@ -1,0 +1,88 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/InitScene.gd" type="Script" id=1]
+[ext_resource path="res://Prefabs/LevelPreset.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Art/Tilesets/OfficeFloors.res" type="TileSet" id=3]
+[ext_resource path="res://Prefabs/Door.tscn" type="PackedScene" id=4]
+
+[node name="Node2D" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="TileManager" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="Floor" parent="TileManager" index="0"]
+
+tile_set = ExtResource( 3 )
+tile_data = PoolIntArray( 1048600, 20, 0, 1048601, 20, 0, 1048602, 20, 0, 1048603, 20, 0, 1048604, 20, 0, 1114136, 20, 0, 1114137, 20, 0, 1114138, 20, 0, 1114139, 20, 0, 1114140, 20, 0, 1179672, 20, 0, 1179673, 20, 0, 1179674, 20, 0, 1179675, 20, 0, 1179676, 20, 0, 1245208, 20, 0, 1245209, 33, 0, 1245210, 20, 0, 1245211, 20, 0, 1245212, 20, 0, 1310744, 20, 0, 1310745, 20, 0, 1310746, 20, 0, 1310747, 20, 0, 1310748, 20, 0, 1376283, 20, 0 )
+
+[node name="Accessories_Floor" parent="TileManager" index="1"]
+
+tile_data = PoolIntArray( 1114137, 32, 0, 1310744, 198, 0 )
+
+[node name="Walls" parent="TileManager" index="2"]
+
+tile_data = PoolIntArray( 917527, 7, 0, 917528, 7, 0, 917529, 7, 0, 917530, 7, 0, 917531, 7, 0, 917532, 7, 0, 983063, 7, 0, 983064, 220, 0, 983065, 220, 0, 983066, 220, 0, 983067, 220, 0, 983068, 7, 0, 1048599, 7, 0, 1048600, 159, 0, 1048601, 161, 0, 1048602, 194, 0, 1048603, 195, 0, 1048604, 7, 0, 1114135, 7, 0, 1114139, 215, 0, 1114140, 7, 0, 1179671, 7, 0, 1179672, 136, 0, 1179673, 134, 0, 1179676, 7, 0, 1245207, 7, 0, 1245212, 7, 0, 1310743, 7, 0, 1310748, 7, 0, 1376279, 7, 0, 1376280, 7, 0, 1376281, 7, 0, 1376282, 7, 0, 1376284, 7, 0, 1441815, 7, 0, 1441816, 7, 0, 1441817, 7, 0, 1441818, 7, 0, 1441819, 7, 0, 1441820, 7, 0 )
+
+[node name="Accessories_Ceiling" parent="TileManager" index="3"]
+
+tile_data = PoolIntArray( 1048600, 88, 0, 1048601, 16, 0 )
+
+[node name="Clothes" parent="TileManager" index="4" instance=ExtResource( 4 )]
+
+position = Vector2( 384, 320 )
+frame = 314
+IS_WALL = true
+TYPE = "TXT"
+ID = "Clothes"
+STOP_PLAYER = true
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
+
+[node name="Trash" parent="TileManager" index="5" instance=ExtResource( 4 )]
+
+position = Vector2( 432, 304 )
+frame = 260
+IS_WALL = true
+TYPE = "TXT"
+ID = "Trash"
+STOP_PLAYER = true
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
+
+[node name="Computer" parent="TileManager" index="6" instance=ExtResource( 4 )]
+
+position = Vector2( 400, 256 )
+offset = Vector2( 0, -16 )
+vframes = 10
+frame = 60
+_sections_unfolded = [ "Animation", "Offset" ]
+IS_WALL = true
+TYPE = "TXT"
+ID = "Computer"
+STOP_PLAYER = true
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
+
+[node name="Door_To_Dreams" parent="TileManager" index="7" instance=ExtResource( 4 )]
+
+position = Vector2( 384, 304 )
+frame = 63
+ID = "Door_To_Dreams"
+STOP_PLAYER = true
+STARTS_UP = false
+IGNORE_WALLS = false
+NON_INTERACTABLE = false
+DELETE_QUEUE_ON_FAIL = true
+
+
+[editable path="TileManager"]

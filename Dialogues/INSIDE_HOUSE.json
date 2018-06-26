@@ -1,0 +1,82 @@
+[
+	{
+		"title": "Step_In",
+		"tags": "",
+		"body": "<<WAIT>><<00>>\n<<PROP.TRG>><<Ceiling_Home_1:visible:bool:true>>\n<<PROP.TRG>><<Ceiling_Home_2:visible:bool:true>>\n<<PROP.TRG>><<Ceiling_Home_3:visible:bool:true>>\n<<PROP.TRG>><<Ceiling_Kitchen:visible:bool:false>>\n<<END>>",
+		"position": {
+			"x": 537,
+			"y": 55
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Step_Out",
+		"tags": "",
+		"body": "<<WAIT>><<00>>\n<<PROP.TRG>><<Ceiling_Home_1:visible:bool:false>>\n<<PROP.TRG>><<Ceiling_Home_2:visible:bool:false>>\n<<PROP.TRG>><<Ceiling_Home_3:visible:bool:false>>\n<<PROP.TRG>><<Ceiling_Kitchen:visible:bool:true>>\n<<END>>",
+		"position": {
+			"x": 764,
+			"y": 53
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Door_4",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<PROP.TRG>><<Door4:IS_WALL:bool:false>>\n<<PROP.TRG>><<Door4:frame:int:55>>\n<<PROP.TRG>><<Door4:Interactable:bool:false>>\n<<END>>",
+		"position": {
+			"x": 990,
+			"y": 57
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Door_1",
+		"tags": "",
+		"body": "<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<ROOM:27:21:U>>\n<<END>>",
+		"position": {
+			"x": 415,
+			"y": 310
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Door_2",
+		"tags": "",
+		"body": "Locked.\n<<BREAK>>\nOne of my flatmates lives in there.\n<<BREAK>>\nOr maybe they moved out?\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 691,
+			"y": 306
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Door_3",
+		"tags": "",
+		"body": "Locked.\n<<BREAK>>\nOne of my flatmates lives in there.\n<<BREAK>>\nCan't quite remember their name.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 963,
+			"y": 324
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Fridge",
+		"tags": "",
+		"body": "I already ate today.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 1252,
+			"y": 295
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Oven",
+		"tags": "",
+		"body": "The carbon monoxide detector doesn't signal any problem.\n<<BREAK>>\n<<END>>",
+		"position": {
+			"x": 1249,
+			"y": 55
+		},
+		"colorID": 0
+	}
+]

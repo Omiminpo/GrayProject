@@ -14,8 +14,8 @@
 		"tags": "",
 		"body": "<<IF>><<inventory contains KEYC01 end>> 7:2\n<<GET>><<KEYC01>>\n<<SET>><<Inventory_Unlocked b= true>>\nObtained work clothes and Keycard\n<<BREAK>>\n<<SKIN.PG>><<res://Art/PG/PG_Work.png>>\n<<BOX.INVISIBLE>>\n<<END>>",
 		"position": {
-			"x": 309,
-			"y": 69
+			"x": 286,
+			"y": 62
 		},
 		"colorID": 0
 	},

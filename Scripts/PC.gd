@@ -118,6 +118,25 @@ func _process(delta):
 	ProcessAnimation()
 	ProcessMoveStart()
 
+func GetNextIfMoving():
+	if (state == MOVING):
+		var dir
+		match direction:
+			DOWN:
+				dir = Vector2(0, 1)
+			LEFT:
+				dir = Vector2(-1, 0)
+			RIGHT:
+				dir = Vector2(1, 0)
+			UP:
+				dir = Vector2(0, -1)
+		
+		target = GetCoor() + dir
+		return target
+	else:
+		return null
+		
+
 func _input(event):
 	if (Global.Menu_State != Global.MENU_STATES.None):
 		if ( MovTween.playback_speed >= 1):

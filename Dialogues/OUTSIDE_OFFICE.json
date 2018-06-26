@@ -102,12 +102,12 @@
 	{
 		"title": "BusEntrance",
 		"tags": "",
-		"body": "<<WAIT>><<0>>\n<<BOX.INVISIBLE>>\n<<WAIT>><<2>>\n<<PROP.TRG>><<ArrowFloor:frame:int:59>>\n<<WAIT>><<2>>\n<<WALK.TRG>><<Bus:50:30:L:Base>>\n<<WAIT>><<12>>\n<<MOVE>><<BUS_TRANSITION_1:1:1:D>>\n<<END>>",
+		"body": "<<WAIT>><<0>>\n<<BOX.INVISIBLE>>\n<<WAIT>><<2>>\n<<PROP.TRG>><<ArrowFloor:frame:int:59>>\n<<WAIT>><<2>>\n<<WALK.TRG>><<Bus:50:30:L:Base>>\n<<WAIT>><<12>>\n((0:0))<<MOVE>><<BUS_TRANSITION_1:1:1:D>>\n((1:1))<<MOVE>><<BUS_TRANSITION_2:1:1:D>>\n<<END>>",
 		"position": {
-			"x": 737,
-			"y": 309
+			"x": 725,
+			"y": -199
 		},
-		"colorID": 0
+		"colorID": 2
 	},
 	{
 		"title": "Sign",
@@ -116,6 +116,16 @@
 		"position": {
 			"x": 966,
 			"y": 313
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Entrance_INIT",
+		"tags": "",
+		"body": "((0:0))<<END>>\n[[Entrance]]",
+		"position": {
+			"x": -8,
+			"y": 314
 		},
 		"colorID": 0
 	}

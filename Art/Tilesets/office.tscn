@@ -2003,4 +2003,49 @@ hframes = 22
 frame = 317
 _sections_unfolded = [ "Animation", "Region" ]
 
+[node name="Wall219" type="Sprite" parent="." index="217"]
+
+position = Vector2( 192, 336 )
+texture = ExtResource( 1 )
+vframes = 20
+hframes = 22
+frame = 318
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="Wall220" type="Sprite" parent="." index="218"]
+
+position = Vector2( 208, 336 )
+texture = ExtResource( 1 )
+vframes = 20
+hframes = 22
+frame = 319
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="Wall221" type="Sprite" parent="." index="219"]
+
+position = Vector2( 224, 336 )
+texture = ExtResource( 1 )
+vframes = 20
+hframes = 22
+frame = 320
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="Wall222" type="Sprite" parent="." index="220"]
+
+position = Vector2( 240, 336 )
+texture = ExtResource( 1 )
+vframes = 20
+hframes = 22
+frame = 321
+_sections_unfolded = [ "Animation", "Region" ]
+
+[node name="Wall223" type="Sprite" parent="." index="221"]
+
+position = Vector2( 256, 336 )
+texture = ExtResource( 1 )
+vframes = 20
+hframes = 22
+frame = 322
+_sections_unfolded = [ "Animation", "Region" ]
+
 

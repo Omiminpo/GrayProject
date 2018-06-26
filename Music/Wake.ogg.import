@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Wake.ogg-54c6728cdd681b56d2d0be2a1eddbd95.oggstr"
+
+[deps]
+
+source_file="res://Music/Wake.ogg"
+dest_files=[ "res://.import/Wake.ogg-54c6728cdd681b56d2d0be2a1eddbd95.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

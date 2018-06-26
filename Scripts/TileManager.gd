@@ -4,7 +4,7 @@ var Walls
 var InitializeFunction
 var Initialized
 var ActiveItems
-const INVALID_NAMES = ["Others", "PC", "Walls", "Floor", "Accessories_Floor", "Accessories_Ceiling"]
+const INVALID_NAMES = ["Underfloor", "AnimationMap", "Others", "PC", "Walls", "Floor", "Accessories_Floor", "Accessories_Ceiling"]
 
 
 func _ready():

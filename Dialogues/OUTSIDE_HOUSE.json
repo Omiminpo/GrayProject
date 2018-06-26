@@ -2,7 +2,7 @@
 	{
 		"title": "Sign_INIT",
 		"tags": "",
-		"body": "<<WAIT>><<0>>\n<<BOX.INVISIBLE>>\n<<WAIT>><<5>>\n<<WALK.TRG>><<Bus:24:13:L:BusAnim>>\n<<WAIT>><<7>>\n<<DESTROY.TRG>><<Cover>>\n<<WAIT>><<4>>\n<<WALK.PG>><<REL:U:U:walk>>\n<<WAIT>><<2>>\n<<WALK.TRG>><<Bus:10:13:L:Base>>\n<<END>>",
+		"body": "<<WAIT>><<0>>\n<<BOX.INVISIBLE>>\n<<WAIT>><<5>>\n<<WALK.TRG>><<Bus:24:13:L:BusAnim>>\n<<WAIT>><<7>>\n<<DESTROY.TRG>><<Cover>>\n<<WAIT>><<4>>\n<<WALK.PG>><<REL:U:U:walk>>\n<<WAIT>><<2>>\n<<WALK.TRG>><<Bus:10:13:L:Base>>\n<<WALK.TRG>><<Bus:-100:13:L:BusAnim>>\n<<END>>",
 		"position": {
 			"x": 540,
 			"y": 253
@@ -16,6 +16,16 @@
 		"position": {
 			"x": 831,
 			"y": 175
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Door",
+		"tags": "",
+		"body": "<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<MOVE>><<INSIDE_HOUSE:29:18:U>>\n<<END>>",
+		"position": {
+			"x": 945,
+			"y": 403
 		},
 		"colorID": 0
 	}

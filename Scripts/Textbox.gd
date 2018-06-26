@@ -105,7 +105,7 @@ func _input(event):
 					_choices_gotos = []
 					_choices_start_viewer = 0
 					_choices_current_select = 0
-					Global.AudioPlayer.PlayEffect("126_Blip_1")
+					Global.AudioPlayer.PlayEffect("126_Blip_1.wav")
 					ProcessScript()
 		else:
 			if (!_overrides[1]):
@@ -115,10 +115,10 @@ func _input(event):
 		match (_mode):
 			CHOICE:
 				if (_choices_current_select <= 0):
-					Global.AudioPlayer.PlayEffect("119_Blip_2")
+					Global.AudioPlayer.PlayEffect("119_Blip_2.wav")
 					pass
 				else:
-					Global.AudioPlayer.PlayEffect("Blip_4")
+					Global.AudioPlayer.PlayEffect("Blip_4.wav")
 					_choices_current_select -= 1
 					if (_choices_current_select < _choices_start_viewer):
 						_choices_start_viewer -= 1
@@ -129,10 +129,10 @@ func _input(event):
 		match (_mode):
 			CHOICE:
 				if (_choices_current_select >= _choices.size() - 1):
-					Global.AudioPlayer.PlayEffect("119_Blip_2")
+					Global.AudioPlayer.PlayEffect("119_Blip_2.wav")
 					pass
 				else:
-					Global.AudioPlayer.PlayEffect("Blip_4")
+					Global.AudioPlayer.PlayEffect("Blip_4.wav")
 					_choices_current_select += 1
 					if (_choices_current_select > _choices_start_viewer + MAXCHOICES - 1):
 						_choices_start_viewer += 1
@@ -1028,7 +1028,7 @@ func NextLine(sound = true):
 	_line += 1
 	_mode = NULL
 	if (sound):
-		Global.AudioPlayer.PlayEffect("Blip_3")
+		Global.AudioPlayer.PlayEffect("Blip_3.wav")
 	ProcessScript()
 	
 func ProcessAltNumbers(c):

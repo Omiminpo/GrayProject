@@ -1,0 +1,72 @@
+[
+	{
+		"title": "Column_INIT",
+		"tags": "",
+		"body": "<<WAIT>><<0>>\n<<BOX.INVISIBLE>>\n<<IF>><<Column i== 0 end>> 9:4\n<<IF>><<Column i== 1 end>> 11:5\n<<IF>><<Column i== 2 end>> 13:6\n<<IF>><<Column i== 3 end>> 15:7\n<<IF>><<Column i== 4 end>> 17:8\n<<IF>><<Column i== 5 end>> 19:20\n<<PROP.TRG>><<Column:frame:int:0>>\n<<END>>\n<<PROP.TRG>><<Column:frame:int:1>>\n<<END>>\n<<PROP.TRG>><<Column:frame:int:2>>\n<<END>>\n<<PROP.TRG>><<Column:frame:int:3>>\n<<END>>\n<<PROP.TRG>><<Column:frame:int:4>>\n<<END>>\n<<PROP.TRG>><<Column:frame:int:5>>\n<<END>>",
+		"position": {
+			"x": 93,
+			"y": 148
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Down_Button_1",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.5>>\n<<WALK.TRG>><<Box_1:REL:D:D:none>>\n<<END>>",
+		"position": {
+			"x": 373,
+			"y": 155
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Left_Button_1",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.5>>\n<<WALK.TRG>><<Box_1:REL:L:L:none>>\n<<END>>",
+		"position": {
+			"x": 374,
+			"y": 362
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Right_Button_1",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.5>>\n<<WALK.TRG>><<Box_1:REL:R:R:none>>\n<<END>>",
+		"position": {
+			"x": 579,
+			"y": 155
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Up_Button_1",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.5>>\n<<WALK.TRG>><<Box_1:REL:U:U:none>>\n<<END>>",
+		"position": {
+			"x": 582,
+			"y": 360
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Box_1_INIT",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<120>>\n((0:0))[[Wake_Up]]\n<<END>>",
+		"position": {
+			"x": 381,
+			"y": -132
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Wake_Up",
+		"tags": "",
+		"body": "<<BOX.INVISIBLE>>\n<<WAIT>><<0.05>>\n<<TRANSITION>><<Fade to Fade:0 0 0:1 to 1>>\n<<WAIT>><<1>>\n<<SOUND>><<PlayFX:Wake.ogg>>\n<<WAIT>><<5>>\n<<SET>><<var Can_Go_Home b= false>>\n<<SET>><<Can_Go_Work b= true>>\n<<SET>><<Day_Done b= false>>\n<<SET>><<Needs_Tasklist b= true>>\n((0:10))<<SET>><<Screen1 b= true>>\n((0:10))<<SET>><<Screen2 b= true>>\n((0:10))<<SET>><<Screen3 b= true>>\n((0:10))<<SET>><<Screen4 b= true>>\n<<SET>><<Days += 1>>\n<<MOVE>><<ROOM_MORNING:24:19:D>>\n<<END>>",
+		"position": {
+			"x": 91,
+			"y": -131
+		},
+		"colorID": 0
+	}
+]
